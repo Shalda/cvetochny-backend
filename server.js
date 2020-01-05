@@ -50,4 +50,4 @@ app.set("port", port);
 const server = http.createServer(app);
 server.on('error', onError);
 server.on('listening', onListening);
-server.listen(port);
+server.listen(8080, '193.42.110.33' );
