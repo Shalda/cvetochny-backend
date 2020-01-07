@@ -34,6 +34,7 @@ exports.userLogin = (req, res, next) => {
                     message: "Ошибка авторизации",
                 });
             }
+            console.log('user found');
             fetchedUser = user;
             return bcrypt.compare(req.body.password, user.password);
         })
@@ -43,6 +44,7 @@ exports.userLogin = (req, res, next) => {
                     message: "Ошибка авторизации",
                 });
             }
+            console.log('pass accepted')
             const token = jwt.sign(
                 { username: fetchedUser.username, userId: fetchedUser._id },
                 process.env.JWT_KEY,
