@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Avenir Next Cyr Light";
+    src: url("AvenirNextCyr-Light.eot"); /* IE9 */
+    src: url("AvenirNextCyr-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("AvenirNextCyr-Light.woff") format("woff"), /* chrome, firefox */
+    url("AvenirNextCyr-Light.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("AvenirNextCyr-Light.svg#Avenir Next Cyr Light") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
