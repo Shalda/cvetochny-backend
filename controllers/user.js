@@ -48,7 +48,7 @@ exports.userLogin = (req, res, next) => {
             console.log('pass accepted');
             const token = jwt.sign(
                 { username: fetchedUser.username, userId: fetchedUser._id },
-                process.env.JWT_KEY,
+                process.env.The_film_was_a_moderate_box_office_success_and_is_considered_a_cult_film,
                 { expiresIn: "1h" }
             );
             res.status(200).json({
