@@ -45,7 +45,7 @@ exports.userLogin = (req, res, next) => {
                     message: "Ошибка авторизации",
                 });
             }
-            console.log('pass accepted')
+            console.log('pass accepted');
             const token = jwt.sign(
                 { username: fetchedUser.username, userId: fetchedUser._id },
                 process.env.JWT_KEY,
@@ -58,6 +58,7 @@ exports.userLogin = (req, res, next) => {
             });
         })
         .catch(err => {
+            console.log(err);
             return res.status(401).json({
                 message: "Invalid authentication credentials!",
             });
