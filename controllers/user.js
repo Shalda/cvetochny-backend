@@ -27,6 +27,7 @@ exports.createUser = (req, res, next) => {
 
 exports.userLogin = (req, res, next) => {
     let fetchedUser;
+    console.log('start login');
     User.findOne({ username: req.body.username })
         .then(user => {
             if (!user) {
