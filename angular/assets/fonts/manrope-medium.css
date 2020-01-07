@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Manrope3 Medium";
+    src: url("manrope-medium.eot"); /* IE9 */
+    src: url("manrope-medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("manrope-medium.woff") format("woff"), /* chrome, firefox */
+    url("manrope-medium.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("manrope-medium.svg#Manrope3 Medium") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
