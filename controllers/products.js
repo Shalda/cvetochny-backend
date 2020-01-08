@@ -1,7 +1,6 @@
 const Product = require('../models/product');
 exports.getProducts = (req, res, next) => {
     const productQuery = Product.find();
-    console.log('products received');
     let fetchedProducts;
     productQuery
         .then(documents => {

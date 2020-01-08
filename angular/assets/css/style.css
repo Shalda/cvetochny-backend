@@ -3546,6 +3546,9 @@ agm-map {
 .sidebar-left-wrapper {
     max-width: 21vw;
 }
+.mobile_menu{
+    display: none !important;
+}
 
 #nav-menu .nav_menu_wrap .menu_right_text {
     text-align: center;
@@ -3558,6 +3561,12 @@ agm-map {
 }
 
 @media only screen and (max-device-width: 768px) {
+    .fullDesktop_menu{
+        display: none!important;
+    }
+    .mobile_menu{
+        display: flex!important;
+    }
     #navMenuLeft {
         height: calc(100vh - 170px);
     }
@@ -3791,4 +3800,7 @@ input[name="tel"] {
 .mainMenu_elem .subMenu_elem  a {
     transition: all 3s 1s;
     display: block;
+}
+.fullDesktop_menu{
+
 }
