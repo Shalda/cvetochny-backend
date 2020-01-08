@@ -290,7 +290,7 @@ body a {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    min-height: 35vh
+    min-height: 40vh
 }
 
 #nav-menu .nav_menu_wrap .nav_menu_left a {
@@ -2351,9 +2351,13 @@ header {
         margin-right: 0;
         margin-left: 0;
         position: relative;
-        height: 420px;
+        height: 430px;
+        max-height: 80vh;
         padding: 16px;
         box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.048);
+    }
+    .catalog-item__img {
+        max-height: 65vh;
     }
 
 
@@ -3785,5 +3789,6 @@ input[name="tel"] {
     display: none;
 }
 .mainMenu_elem .subMenu_elem  a {
+    transition: all 3s 1s;
     display: block;
 }
