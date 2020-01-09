@@ -3269,9 +3269,10 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 768px) {
-    .newProd{
+    .newProd {
         top: 22px;
         left: 22px;
+        text-align: center;
         letter-spacing: 0;
     }
 
@@ -3573,6 +3574,10 @@ input[name="tel"] {
 
 @media only screen and (max-device-width: 578px) {
 
+    .newProd {
+        line-height: 15px;
+    }
+
     .catalog-item {
         flex: 0 1 50%;
     }
@@ -3683,7 +3688,7 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 374px) {
-    .newProd{
+    .newProd {
         top: 10px;
         left: 10px;
     }
