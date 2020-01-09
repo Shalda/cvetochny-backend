@@ -3067,6 +3067,22 @@ input[name="tel"] {
     display: block;
 }
 
+.newProd {
+    position: absolute;
+    top: 8px;
+    z-index: 5;
+    letter-spacing: 1px;
+    padding: 5px;
+    left: 8px;
+    background-color: #712bd4;
+    display: inline-block;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+
 @media only screen and (max-device-width: 1740px) {
     .sidebars_wrapper {
         width: 95vw;
@@ -3086,8 +3102,12 @@ input[name="tel"] {
 
 @media only screen and (max-device-width: 1460px) {
     .catalog-item {
-        flex: 0 1 33.333%;
-        margin: 0;
+        flex: 0 1 31%;
+        margin-right: 10px;
+    }
+
+    .newProd {
+        font-size: 12px;
     }
 
     .catalog-item__img {
@@ -3204,6 +3224,10 @@ input[name="tel"] {
         padding-right: 5px !important
     }
 
+    .sidebar-left_list a {
+        font-size: 16px;
+    }
+
     .footer_social a {
         position: relative;
         color: transparent !important;
@@ -3243,6 +3267,12 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 768px) {
+    .newProd{
+        top: 22px;
+        left: 22px;
+        letter-spacing: 0;
+    }
+
     .visualLinkMobile, .weddingLinkMobile {
         display: block
     }
@@ -3362,15 +3392,17 @@ input[name="tel"] {
 
     .catalog-wrapper {
         margin: 10px 0;
-        border-top: 1px solid #696969;
-        border-left: 1px solid #696969;
+        border-top: 1px solid #535353;
+        border-left: 1px solid #535353;
     }
 
     .catalog-item {
+        flex: 0 1 33.333%;
+        margin: 0;
         position: relative;
         padding: 16px;
-        border-right: 1px solid #696969;
-        border-bottom: 1px solid #696969;
+        border-right: 1px solid #535353;
+        border-bottom: 1px solid #535353;
     }
 
     .catalog-item__img {
@@ -3649,6 +3681,11 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 374px) {
+    .newProd{
+        top: 10px;
+        left: 10px;
+    }
+
     .catalog-item {
         font-size: 14px;
         padding: 6px;
