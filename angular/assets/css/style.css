@@ -3086,7 +3086,8 @@ input[name="tel"] {
 
 @media only screen and (max-device-width: 1460px) {
     .catalog-item {
-        flex: 0 1 29.5%;
+        flex: 0 1 33.333%;
+        margin: 0;
     }
 
     .catalog-item__img {
@@ -3366,11 +3367,11 @@ input[name="tel"] {
     .catalog-item {
         position: relative;
         padding: 16px;
-        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.048);
+        /*box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.048);*/
     }
 
     .catalog-item__img {
-        height: 33vw;
+        height: 36vw;
     }
 
 
@@ -3536,11 +3537,11 @@ input[name="tel"] {
 @media only screen and (max-device-width: 578px) {
 
     .catalog-item {
-        flex: 0 1 43%;
+        flex: 0 1 50%;
     }
 
     .catalog-item__img {
-        height: 50vw;
+        height: 56vw;
     }
 
     .footer_adress {
@@ -3648,7 +3649,7 @@ input[name="tel"] {
     .catalog-item {
         font-size: 14px;
         padding: 6px;
-        margin: 0 5px 10px 5px;
+
     }
 
     .catalog-item__prices {
