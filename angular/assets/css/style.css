@@ -3109,6 +3109,7 @@ input[name="tel"] {
 
     .newProd {
         font-size: 12px;
+        line-height: 12px;
     }
 
     .catalog-item__img {
