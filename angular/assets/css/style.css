@@ -3362,16 +3362,19 @@ input[name="tel"] {
 
     .catalog-wrapper {
         margin: 10px 0;
+        border-top: 1px solid #696969;
+        border-left: 1px solid #696969;
     }
 
     .catalog-item {
         position: relative;
         padding: 16px;
-        /*box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.048);*/
+        border-right: 1px solid #696969;
+        border-bottom: 1px solid #696969;
     }
 
     .catalog-item__img {
-        height: 36vw;
+        height: 38vw;
     }
 
 
