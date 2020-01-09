@@ -3072,15 +3072,16 @@ input[name="tel"] {
     top: 8px;
     z-index: 5;
     letter-spacing: 1px;
-    padding: 5px;
+    padding: 5px 7px;
     left: 8px;
     background-color: #712bd4;
     display: inline-block;
-    border-radius: 50px;
+    border-radius: 25px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 700;
     font-size: 14px;
+    line-height: 14px;
 }
 
 @media only screen and (max-device-width: 1740px) {
