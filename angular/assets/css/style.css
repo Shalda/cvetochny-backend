@@ -554,6 +554,15 @@ body a {
     background: rgba(0, 0, 0, .7);
     z-index: 1003
 }
+.header-menu_popup-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 98
+}
 
 .consultation_popWindow {
     z-index: 1004;
