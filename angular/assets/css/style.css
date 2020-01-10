@@ -259,12 +259,13 @@ body a {
 }
 
 #nav-menu .nav_menu_wrap {
+    white-space: nowrap;
     margin: auto;
     max-width: 1770px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
 }
 
 #nav-menu .nav_menu_wrap .nav_menu_left, #nav-menu .nav_menu_wrap .nav_menu_right {
