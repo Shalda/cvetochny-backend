@@ -2368,6 +2368,10 @@ input[name="tel"] {
     color: greenyellow;
 }
 
+.count__decrease_m, .count__increase_m{
+    display: none;
+}
+
 @media only screen and (min-device-width: 769px) {
     .back-link_wrapper:hover {
         color: #ff4500;
@@ -2986,7 +2990,12 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 590px) {
-
+    .count__decrease_m, .count__increase_m{
+        display: block;
+    }
+    .count__decrease, .count__increase{
+        display: none;
+    }
 
     .cart-elem {
         -webkit-flex-basis: 100% !important;
