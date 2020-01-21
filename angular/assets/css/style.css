@@ -2744,7 +2744,7 @@ input[name="tel"] {
         position: absolute;
         padding: 0;
         margin: 0;
-        top: 80px;
+        top: 85px;
         right: 4vw
     }
 
@@ -3001,7 +3001,8 @@ input[name="tel"] {
     }
 
     .cart-button {
-        padding: 7px
+        padding: 7px;
+        font-size: 13px;
     }
 
     .table-cart-fullSize {

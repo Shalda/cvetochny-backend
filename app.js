@@ -43,6 +43,4 @@ app.use("/api/sendmail", emailsRoutes);
 app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "angular", "index.html"))
 });
-
-
 module.exports = app;
