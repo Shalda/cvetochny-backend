@@ -4,8 +4,8 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const productsRouts = require("./routes/products");
+const ordersRouts = require("./routes/orders");
 const visualsRouts = require("./routes/visuals");
-// const dataRouts = require("./routes/data");
 const userRoutes = require("./routes/user");
 const emailsRoutes = require("./routes/emails");
 mongoose.connect(
@@ -36,16 +36,12 @@ app.use((req, res, next) => {
     next();
 });
 app.use("/api/products", productsRouts);
+app.use("/api/orders", ordersRouts);
 app.use("/api/visuals", visualsRouts);
-// app.use("/api/data", dataRouts);
 app.use("/api/user", userRoutes);
 app.use("/api/sendmail", emailsRoutes);
 app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "angular", "index.html"))
 });
-// app.use("/", (req, res) => {
-//     res.statusCode = 200;
-//     res.end('Hello Node!\n');
-// });
 
 module.exports = app;
