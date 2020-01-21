@@ -182,6 +182,7 @@ textarea,
 input.text,
 input[type="text"],
 input[type="button"],
+input[type="tel"],
 input[type="submit"],
 .input-checkbox {
     -webkit-appearance: none;
