@@ -40,8 +40,12 @@ app.use("/api/orders", ordersRouts);
 app.use("/api/visuals", visualsRouts);
 app.use("/api/user", userRoutes);
 app.use("/api/sendmail", emailsRoutes);
-app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "angular", "index.html"))
+// app.use((req, res, next) => {
+//   res.sendFile(path.join(__dirname, "angular", "index.html"))
+// });
+app.use("/", (req, res) => {
+    res.statusCode = 200;
+    res.end('Hello Node!\n');
 });
 
 module.exports = app;
