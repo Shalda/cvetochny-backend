@@ -2338,7 +2338,6 @@ input[name="tel"] {
 .admin_order_common_info {
     flex-basis: 100%;
 }
-
 .admin_order_client {
     flex-basis: 50%;
 }
@@ -2368,7 +2367,7 @@ input[name="tel"] {
     color: greenyellow;
 }
 
-.count__decrease_m, .count__increase_m{
+.count__decrease_m, .count__increase_m {
     display: none;
 }
 
@@ -2990,11 +2989,12 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 590px) {
+      .count__decrease, .count__increase{
+        display: none;
+    }
+
     .count__decrease_m, .count__increase_m{
         display: block;
-    }
-    .count__decrease, .count__increase{
-        display: none;
     }
 
     .cart-elem {
