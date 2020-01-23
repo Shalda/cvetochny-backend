@@ -41,6 +41,21 @@ exports.oneClickOrder = (req, res) => {
 };
 
 async function sendMail(user, callback, schema) {
+    let cartStr;
+    if (user.order.cart) {
+        cartStr = JSON.stringify(user.order.cart)
+            .replace(/productId/g, 'Id')
+            .replace(/productName/g, 'Название')
+            .replace(/productPrice/g, 'Цена за ед.')
+            .replace(/productQuantity/g, 'Кол-во шт.')
+            .replace(/:/g, ': ')
+            .replace(/,/g, ' ')
+            .replace(/[\[\]"{]/g, '')
+            .replace(/}/g, '<br>');
+    } else {
+        cartStr = 'Не выбран товар'
+    }
+
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
@@ -69,7 +84,7 @@ async function sendMail(user, callback, schema) {
             mailOptions = {
                 from: `${user.name}`, // sender address
                 to: 'cvetochny.kh@gmail.com', // list of receivers
-                subject: "Заказ в один клик", // Subject line
+                subject: "Заказ в один клик!", // Subject line
                 html: `<h1>Пришел заказ в один клик от ${user.name}</h1><br>
     <h4>Товар: ${user.product} id:  ${user._id}</h4>
     <h4>Телефон покупателя: ${user.phone}</h4>
@@ -103,8 +118,10 @@ async function sendMail(user, callback, schema) {
         <hr>
         <h3>Информация о заказе:</h3>
         <br>
-        ${JSON.stringify(user.order.cart)}
-        <h1>Более детально про заказ можно узнать на сайте, админ панель, раздел заказы!!!</h1>
+         ${cartStr}
+         <br>
+         <h2>Итого: ${user.order.cartPrice} грн.</H2>
+        <h3>Более детально про заказ можно узнать на сайте, админ панель, раздел заказы!!!</h3>
 `
             };
             break;

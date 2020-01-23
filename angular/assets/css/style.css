@@ -873,12 +873,12 @@ header {
 
 }
 
-.main_page_section img {
-    display: block;
-    width: 100vw;
-    height: calc(100vh - 170px);
-    object-fit: cover;
-}
+/*.main_page_section img {*/
+/*    display: block;*/
+/*    width: 100vw;*/
+/*    height: calc(100vh - 170px);*/
+/*    object-fit: cover;*/
+/*}*/
 
 .sidebar-left {
     /*width: 21vw;*/
