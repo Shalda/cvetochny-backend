@@ -42,7 +42,7 @@ exports.oneClickOrder = (req, res) => {
 
 async function sendMail(user, callback, schema) {
     let cartStr;
-    if (user.order.cart) {
+    if (user.order && user.order.cart) {
         cartStr = JSON.stringify(user.order.cart)
             .replace(/productId/g, 'Id')
             .replace(/productName/g, 'Название')

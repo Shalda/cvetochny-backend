@@ -282,7 +282,7 @@ input[type="submit"],
 }
 
 #nav-menu .nav_menu_wrap .nav_menu_left, #nav-menu .nav_menu_wrap .nav_menu_right {
-    padding: 7vh 0 7vh;
+    padding: 7vh 10px 7vh;
     font-family: "Avenir Light", Arial, Helvetica, sans-serif;
     position: relative;
     display: -webkit-box;
@@ -298,13 +298,11 @@ input[type="submit"],
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
+    flex: 0 0 50%;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    min-height: 40vh
+    min-height: 45vh
 }
 
 #nav-menu .nav_menu_wrap .nav_menu_left a {
@@ -357,6 +355,10 @@ input[type="submit"],
 
 #nav-menu .nav_menu_wrap .menu_right_text a {
     font-family: "Avenir Demi", Arial, Helvetica, sans-serif
+}
+
+#nav-menu .nav_menu_wrap .menu_right_text span, h3 {
+    white-space: normal;
 }
 
 #nav-menu .nav_menu_wrap .menu_right_text :first-child {
@@ -918,7 +920,7 @@ header {
     background: url(../images/line.svg) no-repeat left center;
     font-family: "Avenir Light", Arial, Helvetica, sans-serif;
     list-style: none;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 20px
 }
 
@@ -2311,7 +2313,8 @@ input[name="tel"] {
     font-size: 14px;
     text-transform: lowercase;
 }
-.admin_order_wrapper p span{
+
+.admin_order_wrapper p span {
     font-size: 18px;
     text-transform: none;
 }
@@ -2321,6 +2324,7 @@ input[name="tel"] {
     padding: 16px 6px;
 
 }
+
 .admin_order_items h3 {
     border: 1px solid white;
     border-bottom: none;
@@ -2332,12 +2336,15 @@ input[name="tel"] {
     border: 1px solid white;
     padding: 6px;
 }
-.admin_order_item:first-of-type{
+
+.admin_order_item:first-of-type {
     border-top: none;
 }
+
 .admin_order_common_info {
     flex-basis: 100%;
 }
+
 .admin_order_client {
     flex-basis: 50%;
 }
@@ -2370,6 +2377,8 @@ input[name="tel"] {
 .count__decrease_m, .count__increase_m {
     display: none;
 }
+
+
 
 @media only screen and (min-device-width: 769px) {
     .back-link_wrapper:hover {
@@ -2472,6 +2481,17 @@ input[name="tel"] {
         max-width: 40vw !important;
         text-align: center
     }
+
+    .submenu_cart {
+        left: -65px;
+    }
+
+    /*    .submenu_cart li {*/
+    /*        font-size: 12px;*/
+    /*    }*/
+    /*    .delete_cart-item:before, .delete_cart-item:after {*/
+    /*        height: 15px;*/
+    /*    }*/
 }
 
 @media only screen and (max-device-width: 1260px) {
@@ -2579,6 +2599,7 @@ input[name="tel"] {
     .admin_order_wrapper {
         flex-direction: column;
     }
+
     #nav-icon1 {
         width: 45px
     }
@@ -2984,16 +3005,16 @@ input[name="tel"] {
 
 @media only screen and (min-device-width: 592px) {
     .product-desc-mobile {
-         display: none !important
-     }
+        display: none !important
+    }
 }
 
 @media only screen and (max-device-width: 590px) {
-      .count__decrease, .count__increase{
+    .count__decrease, .count__increase {
         display: none;
     }
 
-    .count__decrease_m, .count__increase_m{
+    .count__decrease_m, .count__increase_m {
         display: block;
     }
 

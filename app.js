@@ -8,9 +8,13 @@ const ordersRouts = require("./routes/orders");
 const visualsRouts = require("./routes/visuals");
 const userRoutes = require("./routes/user");
 const emailsRoutes = require("./routes/emails");
+const smsRouts = require('./routes/sms');
+
 mongoose.connect(
-    "mongodb+srv://zeppelin:K9ocRGcgbQrpUOfc@clusterfr-m9lkb.mongodb.net/cvetochny_db", {useUnifiedTopology: true,
-        useNewUrlParser: true,}
+    "mongodb+srv://zeppelin:K9ocRGcgbQrpUOfc@clusterfr-m9lkb.mongodb.net/cvetochny_db", {
+        useUnifiedTopology: true,
+        useNewUrlParser: true,
+    }
 ).then(() => {
     console.log("connected to database!");
 }).catch(() => {
@@ -40,7 +44,10 @@ app.use("/api/orders", ordersRouts);
 app.use("/api/visuals", visualsRouts);
 app.use("/api/user", userRoutes);
 app.use("/api/sendmail", emailsRoutes);
+app.use("/api/sms", smsRouts);
 app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "angular", "index.html"))
+    res.sendFile(path.join(__dirname, "angular", "index.html"))
 });
+
+
 module.exports = app;
