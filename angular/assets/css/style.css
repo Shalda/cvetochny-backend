@@ -2378,6 +2378,9 @@ input[name="tel"] {
     display: none;
 }
 
+.shop_title{
+    cursor: pointer;
+}
 
 
 @media only screen and (min-device-width: 769px) {

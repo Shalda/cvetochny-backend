@@ -16,7 +16,6 @@ exports.createOrder = (req, res, next) => {
         shipped: req.body.shipped,
         cart: req.body.cart
     });
-    console.log(order);
     order.save()
         .then(createdOrder => {
             res.status(201).json({
