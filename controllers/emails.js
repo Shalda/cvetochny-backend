@@ -71,7 +71,7 @@ async function sendMail(user, callback, schema) {
         case 'consultation':
             mailOptions = {
                 from: `${user.name}`, // sender address
-                to: 'cvetochny.kh@gmail.com', // list of receivers
+                to: 'lazutikovnikita@gmail.com', // list of receivers
                 subject: "Запрос на консультацию!", // Subject line
                 html: `<h1>Посетителю ${user.name} нужна консультация!</h1><br>
     <h4>Текст сообщения:</h4>
@@ -83,7 +83,7 @@ async function sendMail(user, callback, schema) {
         case 'click':
             mailOptions = {
                 from: `${user.name}`, // sender address
-                to: 'cvetochny.kh@gmail.com', // list of receivers
+                to: 'lazutikovnikita@gmail.com', // list of receivers
                 subject: "Заказ в один клик!", // Subject line
                 html: `<h1>Пришел заказ в один клик от ${user.name}</h1><br>
     <h4>Товар: ${user.product} id:  ${user._id}</h4>
@@ -94,7 +94,7 @@ async function sendMail(user, callback, schema) {
         case 'order':
             mailOptions = {
                 from: `${user.name}`, // sender address
-                to: 'cvetochny.kh@gmail.com', // list of receivers
+                to: 'lazutikovnikita@gmail.com', // list of receivers
                 subject: "Пришел заказ!", // Subject line
                 html: `<h1>Заказ от ${user.name}</h1><br>
         <p>Количество товара: <span>${user.order.itemCount} шт.</span></p>
@@ -128,7 +128,7 @@ async function sendMail(user, callback, schema) {
         case 'visual':
             mailOptions = {
                 from: `${user.name}`, // sender address
-                to: 'cvetochny.kh@gmail.com', // list of receivers
+                to: 'lazutikovnikita@gmail.com', // list of receivers
                 subject: "Сообщение от посетителя со страницы Оформление!", // Subject line
                 html: `<h1>Пришло сообщение от ${user.name}</h1><br>
     <h4>Пользователь пришел со страницы товара: ${user.product} id:  ${user._id}</h4>
@@ -138,7 +138,7 @@ async function sendMail(user, callback, schema) {
         default:
             mailOptions = {
                 from: `${user.name}`, // sender address
-                to: 'cvetochny.kh@gmail.com', // list of receivers
+                to: 'lazutikovnikita@gmail.com', // list of receivers
                 subject: "Сообщение от посетителя сайта!", // Subject line
                 html: `<h1>Пришло сообщение от ${user.name}</h1><br>
     <h4>Пользователь пришел со страницы товара: ${user.product} id товара:  ${user._id}</h4>
