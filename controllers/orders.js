@@ -36,7 +36,6 @@ exports.getOrders = (req, res, next) => {
     orderQuery
         .then(documents => {
                 fetchedOrders = documents;
-                console.log(fetchedOrders);
                 res.status(200).json({
                     message: "заказы получены!",
                     orders: fetchedOrders,
