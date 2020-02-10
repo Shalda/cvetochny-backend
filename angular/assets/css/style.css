@@ -1072,28 +1072,14 @@ header {
     font-size: 15px;
 }
 
+
+
 .catalog-item__btn:hover a {
     /*color: #fff*/
     /*light theme*/
-    color: #4d4d4d;
+
 }
 
-.catalog-item__line {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0;
-    background-color: #919191;
-    -webkit-transition: width .3s ease-in-out;
-    -o-transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out
-}
-
-.catalog-item__btn:hover + .catalog-item__line {
-    width: 15%
-}
 
 .orderText {
     padding-top: 10px
@@ -1964,7 +1950,8 @@ input[name="tel"] {
 }
 
 .card-buttons_wrapper button {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+    margin-right: 6px;
 }
 
 .orderText-shop {
@@ -2197,7 +2184,6 @@ input[name="tel"] {
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-    margin-bottom: 25px;
     /*border: 1px solid #fff;*/
     /*color: #fff;*/
     /*light theme*/
@@ -2264,7 +2250,7 @@ input[name="tel"] {
 
 .count__increase:hover {
     cursor: pointer;
-    color: #adff2f
+    color: #1d800d
 }
 
 .count__decrease:hover {
@@ -2310,8 +2296,9 @@ input[name="tel"] {
 }
 
 .checkout_section {
-    margin: auto;
+
     max-width: 1740px;
+    margin-top: 85px;
 
 
 }
@@ -2424,10 +2411,55 @@ input[name="tel"] {
     color: #b9b5b5 !important;
 }
 
+.product-card__quantity{
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+    margin-bottom: 16px;
+}
 @media only screen and (min-device-width: 769px) {
     .back-link_wrapper:hover {
         color: #ff4500;
     }
+    .catalog-item__btn a span{
+        /*transition: all .5s;*/
+    }
+
+    .catalog-item__btn a span:nth-child(3){
+        transition-delay: .05s;
+    }
+    .catalog-item__btn a span:nth-child(4){
+        transition-delay: .07s;
+    }
+    .catalog-item__btn a span:nth-child(5){
+        transition-delay: .09s;
+    }
+    .catalog-item__btn a span:nth-child(6){
+        transition-delay: .11s;
+    }
+    .catalog-item__btn a span:nth-child(7){
+        transition-delay: .12s;
+    }
+    .catalog-item__btn a span:nth-child(8){
+        transition-delay: .14s;
+    }
+    .catalog-item__btn a span:nth-child(9){
+        transition-delay: .16s;
+    }
+    .catalog-item__btn a:hover span{
+
+        font-weight: bold;
+    }
+    .catalog-item__btn a:hover span:nth-child(9){ transition-delay: .16s;}
+    .catalog-item__btn a:hover span:nth-child(8){ transition-delay: .14s;}
+    .catalog-item__btn a:hover span:nth-child(7){ transition-delay: .12s;}
+    .catalog-item__btn a:hover span:nth-child(6){ transition-delay: .1s;}
+    .catalog-item__btn a:hover span:nth-child(5){ transition-delay: .08s;}
+    .catalog-item__btn a:hover span:nth-child(4){ transition-delay: .04s;}
+    .catalog-item__btn a:hover span:nth-child(3){ transition-delay: .02s;}
+    .catalog-item__btn a:hover span:nth-child(1){ transition-delay: 0s;}
+
+
 }
 
 @media only screen and (max-device-width: 1740px) {
@@ -2724,7 +2756,12 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 768px) {
-
+    .toCartHidden{
+        display: none;
+    }
+    .toCart{
+        display: inline-block;
+    }
     #orderForm input, select {
         padding: 5px 0 5px 0;
     }
@@ -3289,6 +3326,9 @@ input[name="tel"] {
     #nav-menu {
         top: 60px;
     }
+    .checkout_section {
+        margin-top: 50px;
+    }
 
 }
 
@@ -3343,6 +3383,16 @@ input[name="tel"] {
     #nav-menu .nav_menu_wrap .menu_right_text a {
         padding: 5px;
     }
+    .catalog-item__prices {
+
+        white-space: nowrap;
+        margin-right: 4px;
+    }
+    .catalog-item__btn {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 @media only screen and (max-device-height: 400px) {
@@ -3366,6 +3416,7 @@ input[name="tel"] {
     .catalog-item__prices {
         font-size: 13px;
     }
+
 
     .footer {
         flex-direction: column-reverse;
