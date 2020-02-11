@@ -1048,12 +1048,12 @@ header {
 }
 
 .catalog-item__name {
-    font-size: 18px;
     margin-top: 10px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .catalog-item__btn, .catalog-item__prices {
