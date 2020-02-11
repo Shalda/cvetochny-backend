@@ -1401,7 +1401,6 @@ section .callbackForm {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: start !important;
-    -webkit-justify-content: start !important;
     -ms-flex-pack: start !important;
     justify-content: start !important
 }
