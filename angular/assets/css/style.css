@@ -1954,11 +1954,11 @@ input[name="tel"] {
     margin-bottom: 8px;
     margin-right: 6px;
 }
-/*.card-buttons_wrapper button:first-of-type {*/
-/*    border-color: #ff4500;*/
-/*    background-color: #ff4500;*/
-/*    color: white;*/
-/*}*/
+.card-buttons_wrapper button:first-of-type {
+    border-color: #ff4500;
+    background-color: #ff4500;
+    color: #ffffff;
+}
 
 .orderText-shop {
 }
@@ -2208,14 +2208,14 @@ input[name="tel"] {
     background-color: #4d4d4d;
     color: #fff
 }
-/*.card-buttons_wrapper button:first-of-type:hover{*/
-/*    !*background-color: #fff;*!*/
-/*    !*color: #4d4d4d*!*/
-/*    !*light theme*!*/
-/*    border-color: #1d800d;*/
-/*    background-color: #1d800d;*/
-/*    color: #fff;*/
-/*}*/
+.card-buttons_wrapper button:first-of-type:hover{
+    /*background-color: #fff;*/
+    /*color: #4d4d4d*/
+    /*light theme*/
+    border-color: #1d800d;
+    background-color: #1d800d;
+    color: #fff;
+}
 
 
 .cart-buttons_wrapper {
