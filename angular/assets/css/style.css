@@ -288,7 +288,7 @@ input[type="submit"],
 
 #nav-menu .nav_menu_wrap .nav_menu_left, #nav-menu .nav_menu_wrap .nav_menu_right {
     padding: 7vh 10px 7vh;
-    font-family: "Avenir Light", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -311,7 +311,7 @@ input[type="submit"],
 }
 
 #nav-menu .nav_menu_wrap .nav_menu_left a {
-    font-family: "Avenir Light", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 27px;
     text-transform: uppercase;
     -webkit-transition: .1s font-weight ease-in-out;
@@ -764,7 +764,7 @@ input[type="submit"],
     order: 1;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #fff;
     padding-left: 20px;
@@ -933,7 +933,7 @@ header {
 
 .sidebar-left-wrapper .subMenu_elem a {
     background: url(../images/line.svg) no-repeat left center;
-    font-family: "Avenir Light", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     list-style: none;
     font-size: 16px;
     padding-left: 20px
@@ -977,7 +977,7 @@ header {
 
 .filter-catalog div {
     display: inline-block;
-    font-family: Avenir, Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin-right: 85px;
     /*padding: 45px 0;*/
@@ -1127,7 +1127,7 @@ section .callbackForm {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    max-height: 70vh;
+    max-height: 63vh;
 }
 
 .product-card__img img {
@@ -1158,7 +1158,7 @@ section .callbackForm {
 }
 
 .product-card__small-text {
-    font-family: "Avenir Light", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 14px;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -2410,7 +2410,10 @@ input[name="tel"] {
     background-color: whitesmoke !important;
     color: #b9b5b5 !important;
 }
-
+.catalog-item__btn a{
+    color: #ff4500;
+    font-weight: 600;
+}
 .product-card__quantity{
     font-size: 14px;
     line-height: 14px;
@@ -2446,10 +2449,44 @@ input[name="tel"] {
     .catalog-item__btn a span:nth-child(9){
         transition-delay: .16s;
     }
-    .catalog-item__btn a:hover span{
-
-        font-weight: bold;
+    .catalog-item__btn a span:nth-child(9){
+        transition-delay: .18s;
     }
+    .catalog-item__btn a span:nth-child(10){
+        transition-delay: .19s;
+    }
+    .catalog-item__btn a span:nth-child(11){
+        transition-delay: .2s;
+    }
+    .catalog-item__btn a span:nth-child(12){
+        transition-delay: .21s;
+    }
+    .catalog-item__btn a span:nth-child(13){
+        transition-delay: .22s;
+    }
+    .catalog-item__btn a span:nth-child(14){
+        transition-delay: .23s;
+    }
+    .catalog-item__btn a span:nth-child(15){
+        transition-delay: .24s;
+    }
+    .catalog-item__btn a span:nth-child(16){
+        transition-delay: .25s;
+    }
+    .catalog-item__btn a span:nth-child(17){
+        transition-delay: .26s;
+    }
+    .catalog-item__btn a:hover span{
+    color: #1d800d;
+
+    }  .catalog-item__btn a:hover span:nth-child(17){ transition-delay: .26s;}
+    .catalog-item__btn a:hover span:nth-child(16){ transition-delay: .25s;}
+    .catalog-item__btn a:hover span:nth-child(15){ transition-delay: .24s;}
+    .catalog-item__btn a:hover span:nth-child(14){ transition-delay: .23s;}
+    .catalog-item__btn a:hover span:nth-child(13){ transition-delay: .22s;}
+    .catalog-item__btn a:hover span:nth-child(12){ transition-delay: .21s;}
+    .catalog-item__btn a:hover span:nth-child(11){ transition-delay: .2s;}
+    .catalog-item__btn a:hover span:nth-child(10){ transition-delay: .19s;}
     .catalog-item__btn a:hover span:nth-child(9){ transition-delay: .16s;}
     .catalog-item__btn a:hover span:nth-child(8){ transition-delay: .14s;}
     .catalog-item__btn a:hover span:nth-child(7){ transition-delay: .12s;}
@@ -2458,8 +2495,9 @@ input[name="tel"] {
     .catalog-item__btn a:hover span:nth-child(4){ transition-delay: .04s;}
     .catalog-item__btn a:hover span:nth-child(3){ transition-delay: .02s;}
     .catalog-item__btn a:hover span:nth-child(1){ transition-delay: 0s;}
-
-
+}
+.toCartHidden{
+    display: inline;
 }
 
 @media only screen and (max-device-width: 1740px) {
@@ -2737,6 +2775,15 @@ input[name="tel"] {
     }
 }
 
+@media only screen and (max-device-width: 900px){
+    .catalog-item__prices{
+        margin-bottom: 0;
+    }
+    .catalog-item__wrapper-price{
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-device-width: 850px) {
     .sidebar-left-wrapper {
         position: relative;
@@ -2756,12 +2803,12 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 768px) {
-    .toCartHidden{
-        display: none;
-    }
-    .toCart{
-        display: inline-block;
-    }
+    /*.toCartHidden{*/
+    /*    display: none;*/
+    /*}*/
+    /*.toCart{*/
+    /*    display: inline-block;*/
+    /*}*/
     #orderForm input, select {
         padding: 5px 0 5px 0;
     }
