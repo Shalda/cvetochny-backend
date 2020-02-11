@@ -269,7 +269,7 @@ input[type="submit"],
     -o-transition: left .5s ease-in-out;
     transition: left .5s ease-in-out;
     z-index: 99;
-    border-top: 1px solid #919191
+    border-bottom: 1px solid #919191
 }
 
 #nav-menu.open {
@@ -354,7 +354,7 @@ input[type="submit"],
 
 #nav-menu .nav_menu_wrap .menu_right_text h3 {
     line-height: 1.2;
-    font-weight: 700;
+    font-weight: 900;
     padding: 10px 0
 }
 
@@ -727,7 +727,7 @@ input[type="submit"],
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin: 45px 20px 35px 0;
+    margin: 26px 20px 35px 0;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -875,9 +875,6 @@ header {
     overflow: hidden
 }
 
-#videoHero {
-    display: none
-}
 
 .main_page_section {
     background: url(../images/main/main.jpg) no-repeat center center fixed;
@@ -981,7 +978,7 @@ header {
     font-size: 14px;
     margin-right: 85px;
     /*padding: 45px 0;*/
-    padding: 40px 0 20px;
+    padding: 30px 0 20px;
     cursor: pointer
 }
 
@@ -1048,16 +1045,17 @@ header {
 }
 
 .catalog-item__name {
+    font-family: "Avenir Demi", sans-serif;
     margin-top: 10px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-size: 18px;
-    font-weight: 800;
+
 }
 
 .catalog-item__btn, .catalog-item__prices {
-    margin: 10px 0;
+    margin: 5px 0;
     right: 0;
     bottom: 0;
 }
@@ -1128,7 +1126,7 @@ section .callbackForm {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    max-height: 63vh;
+    max-height: 80vh;
 }
 
 .product-card__img img {
@@ -1224,7 +1222,9 @@ section .callbackForm {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
 }
 
 .order-tittle {
@@ -1270,7 +1270,7 @@ section .callbackForm {
 
 .order-product-wrapper {
     width: 50%;
-    padding: 0 150px 20px 0
+    padding-bottom: 20px;
 }
 
 .order-center-line {
@@ -1352,7 +1352,7 @@ section .callbackForm {
 
 .order-costumer-form-wrapper {
     width: 50%;
-    padding: 0 20px 20px 150px
+    padding: 20px 0;
 }
 
 #orderForm {
@@ -1390,9 +1390,8 @@ section .callbackForm {
 }
 
 #orderForm label {
-    font-family: "Avenir Light", Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    text-transform: lowercase;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
 
 .receiver-box {
@@ -2117,15 +2116,23 @@ input[name="tel"] {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between
+    /*-webkit-box-pack: justify;*/
+    /*-webkit-justify-content: space-between;*/
+    /*-ms-flex-pack: justify;*/
+    /*justify-content: space-between*/
 }
 
-#cart-table span {
-    text-align: center
+ .cart-price-title, .cart-count-title, .cart-price-title {
+    margin-left: 16px;
 }
+
+.cart-price-title {
+    margin-left: auto;
+}
+
+/*#cart-table span {*/
+/*    text-align: center*/
+/*}*/
 
 .cart-elems {
     margin: 2.5px 0;
@@ -2442,7 +2449,17 @@ input[name="tel"] {
     height: 14px;
     margin-bottom: 16px;
 }
-
+.order-total-price{
+    font-weight: bold;
+}
+.datePickField{
+    position: relative;
+}
+.datePickerBtn{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
 @media only screen and (min-device-width: 769px) {
     .back-link_wrapper:hover {
         color: #ff4500;
@@ -2590,6 +2607,20 @@ input[name="tel"] {
     display: inline;
 }
 
+@media only screen and (min-device-width: 768px) {
+    section {
+        overflow: hidden;
+    }
+
+    #videoHero {
+        display: block;
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+
 @media only screen and (max-device-width: 1740px) {
     .sidebars_wrapper {
         width: 95vw;
@@ -2606,13 +2637,7 @@ input[name="tel"] {
         width: 100vw
     }
 
-    .order-product-wrapper {
-        padding: 0 40px 20px 0
-    }
 
-    .order-costumer-form-wrapper {
-        padding: 0 20px 20px 40px
-    }
 }
 
 @media only screen and (max-device-width: 1600px) {
@@ -2717,6 +2742,9 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 1240px) {
+    .table-cart-titles {
+        font-size: 14px ;
+    }
     .sidebar-left {
         width: 27vw
     }
@@ -2800,6 +2828,10 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 992px) {
+    #videoHero {
+        display: none
+    }
+
     .admin_order_wrapper {
         flex-direction: column;
     }
@@ -2887,17 +2919,6 @@ input[name="tel"] {
     }
 }
 
-@media only screen and (min-device-width: 768px) {
-    section{
-        overflow: hidden;
-    }
-    #videoHero {
-        display: block;
-        width: 100vw;
-        height: auto;
-overflow: hidden;
-    }
-}
 
 @media only screen and (max-device-width: 768px) {
     /*.toCartHidden{*/
@@ -3043,6 +3064,7 @@ overflow: hidden;
 
     .filter-catalog {
         position: inherit;
+        margin-left: 6px;
     }
 
     .filter-catalog div {
@@ -3054,7 +3076,7 @@ overflow: hidden;
         margin: 10px 0;
         /*box-shadow: inset 0 0 0 1px #717171;*/
         /*light theme*/
-        box-shadow: inset 0 0 0 1px #c5c5c5;
+        /*box-shadow: inset 0 0 0 1px #c5c5c5;*/
     }
 
     .catalog-item {
@@ -3065,8 +3087,8 @@ overflow: hidden;
         /*border-right: 1px solid #717171;*/
         /*border-bottom: 1px solid #717171;*/
         /*light theme*/
-        border-right: 1px solid #c5c5c5;
-        border-bottom: 1px solid #c5c5c5;
+        /*border-right: 1px solid #c5c5c5;*/
+        /*border-bottom: 1px solid #c5c5c5;*/
     }
 
     .catalog-item__img {
@@ -3236,13 +3258,16 @@ overflow: hidden;
     }
 }
 
-@media only screen and (min-device-width: 592px) {
+@media only screen and (min-device-width: 591px) {
     .product-desc-mobile {
         display: none !important
     }
 }
 
 @media only screen and (max-device-width: 590px) {
+    .cart-count-title{
+        margin-left: 0;
+    }
     .count__decrease, .count__increase {
         display: none;
     }
@@ -3312,11 +3337,8 @@ overflow: hidden;
         font-size: 16px
     }
 
-    .cart-product-img {
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center
+    .cart-title-title span:first-child{
+        flex-basis: 0
     }
 
     .product-desc-mobile {
