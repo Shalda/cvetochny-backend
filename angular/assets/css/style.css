@@ -2122,7 +2122,7 @@ input[name="tel"] {
     /*justify-content: space-between*/
 }
 
- .cart-price-title, .cart-count-title, .cart-price-title {
+.cart-price-title, .cart-count-title, .cart-price-title {
     margin-left: 16px;
 }
 
@@ -2449,17 +2449,21 @@ input[name="tel"] {
     height: 14px;
     margin-bottom: 16px;
 }
-.order-total-price{
+
+.order-total-price {
     font-weight: bold;
 }
-.datePickField{
+
+.datePickField {
     position: relative;
 }
-.datePickerBtn{
+
+.datePickerBtn {
     position: absolute;
-    bottom: -5px;
+    bottom: -3px;
     right: 0;
 }
+
 @media only screen and (min-device-width: 769px) {
     .back-link_wrapper:hover {
         color: #ff4500;
@@ -2603,6 +2607,12 @@ input[name="tel"] {
     }
 }
 
+.back-link_checkout {
+    /*width: 50%;*/
+    /*margin: 0 auto;*/
+    /*padding: 25px;*/
+}
+
 .toCartHidden {
     display: inline;
 }
@@ -2743,8 +2753,9 @@ input[name="tel"] {
 
 @media only screen and (max-device-width: 1240px) {
     .table-cart-titles {
-        font-size: 14px ;
+        font-size: 14px;
     }
+
     .sidebar-left {
         width: 27vw
     }
@@ -2828,9 +2839,10 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 992px) {
-    #videoHero {
+    #videoHero, #video {
         display: none
     }
+
 
     .admin_order_wrapper {
         flex-direction: column;
@@ -3265,9 +3277,10 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 590px) {
-    .cart-count-title{
+    .cart-count-title {
         margin-left: 0;
     }
+
     .count__decrease, .count__increase {
         display: none;
     }
@@ -3323,8 +3336,16 @@ input[name="tel"] {
     }
 
     .cart-elem {
-        padding: 8px
+        padding: 8px;
+        display: flex;
+
     }
+
+    .cart-elem.cart-product-img {
+
+        justify-content: space-around;
+    }
+
 
     .cart-elem span:first-child {
         -webkit-flex-basis: 33.33%;
@@ -3336,8 +3357,20 @@ input[name="tel"] {
         text-align: left;
         font-size: 16px
     }
+    .incr_derc_wrapper{
+        display: flex;
+    }
+    .cart-title-title span:last-child {
+        margin: 0 auto;
+    }
+    .cart-price-title span:last-child,
+    .cart-count-title div,
+    .cart-price-title span:last-child {
+        margin-left: auto;
+    }
 
-    .cart-title-title span:first-child{
+
+    .cart-title-title span:first-child {
         flex-basis: 0
     }
 
@@ -3347,6 +3380,9 @@ input[name="tel"] {
         align-self: flex-start;
         font-family: "Avenir Light", Arial, Helvetica, sans-serif;
         font-size: 14px !important
+    }
+    .count__decrease_m, .count__increase_m{
+        font-size: 20px!important;
     }
 }
 
