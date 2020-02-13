@@ -1962,7 +1962,7 @@ input[name="tel"] {
 }
 
 .orderText-shop span:first-of-type {
-    color: gold;
+    color: #ff4500;
 }
 
 .submenu_cart {
@@ -2220,6 +2220,7 @@ input[name="tel"] {
     background-color: #1d800d;
     color: #fff;
 }
+
 .orange_btn {
     border-color: #ff4500;
     background-color: #ff4500;
@@ -2499,7 +2500,7 @@ input[name="tel"] {
     }
 
     #videoHero {
-             width: 100vw;
+        width: 100vw;
         height: auto;
         overflow: hidden;
     }
@@ -2717,8 +2718,6 @@ input[name="tel"] {
     /*#videoHero, #video {*/
     /*    display: none*/
     /*}*/
-
-
     .admin_order_wrapper {
         flex-direction: column;
     }
@@ -2808,6 +2807,21 @@ input[name="tel"] {
 
 
 @media only screen and (max-device-width: 768px) {
+    .one_product__wrapper {
+        padding: 0 16px;
+    }
+
+    .footer_social a {
+        margin-right: 15px;
+    }
+
+    .card-buttons_wrapper button:first-of-type {
+        margin-right: 8px;
+    }
+
+    .navbar_wrapper {
+        padding: 0 16px;
+    }
 
     #orderForm input, select {
         padding: 5px 0 5px 0;
@@ -2841,7 +2855,7 @@ input[name="tel"] {
     }
 
     .nav_menu_left a {
-        font-size: 22px !important
+        font-size: 19px !important
     }
 
     .nav_menu_left, .nav_menu_right {
@@ -2935,7 +2949,8 @@ input[name="tel"] {
     }
 
     .sidebar-left {
-        width: 95vw
+        width: 95vw;
+        padding-left: 16px;
     }
 
     .sidebar-right {
@@ -2946,12 +2961,12 @@ input[name="tel"] {
 
     .filter-catalog {
         position: inherit;
-        margin-left: 6px;
+        margin-left: 16px;
     }
 
     .filter-catalog div {
         margin-right: 20px;
-        padding: 20px 0
+        padding: 20px 0 20px;
     }
 
     .catalog-wrapper {
@@ -3442,7 +3457,7 @@ input[name="tel"] {
     }
 
     .product-card__left {
-        max-width: 320px;
+        /*max-width: 320px;*/
         margin: 0 auto
     }
 
@@ -3482,6 +3497,23 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 374px) {
+    .card-buttons_wrapper button {
+        margin-right: 0;
+        padding: 6px;
+    }
+
+    .one_product__wrapper {
+        padding: 0 6px;
+    }
+
+    .footer {
+        padding: 15px 16px !important;
+    }
+
+    .navbar_wrapper {
+        padding: 0 14px
+    }
+
     .newProd {
         top: 10px;
         right: 10px;
@@ -3497,6 +3529,13 @@ input[name="tel"] {
         font-size: 13px;
     }
 
+    .sidebar-left {
+        padding-left: 6px;
+    }
+
+    .filter-catalog {
+        margin-left: 6px;
+    }
 
     .footer {
         flex-direction: column-reverse;
