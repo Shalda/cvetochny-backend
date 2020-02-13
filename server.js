@@ -6,8 +6,8 @@ const options = {
     // key: fs.readFileSync('key.pem'),
     // cert: fs.readFileSync('cert.pem')
     key: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/cert.pem'),
-    ca: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/chain.pem')
+    cert: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/fullchain.pem'),
+    ca: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/fullchain.pem')
 };
 const normalizePort = val => {
     var port = parseInt(val, 10);
