@@ -21,7 +21,8 @@ exports.getProducts = (req, res, next) => {
 };
 
 exports.createProduct = (req, res, next) => {
-    const url = req.protocol + "://" + req.get("host");
+    // const url = req.protocol + "://" + req.get("host");
+    const url = "https://" + req.get("host");
     const product = new Product({
         name: req.body.name,
         parentCategory: req.body.parentCategory,
