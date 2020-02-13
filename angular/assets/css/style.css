@@ -2467,6 +2467,17 @@ input[name="tel"] {
 .order_time {
     padding-top: 25px;
 }
+.admin-img{
+    margin: 0 auto;
+    display: block;
+    width: 42px;
+    height: 51px;
+}
+.admin-img img{
+    max-width: 42px;
+    height: 100%;
+    object-fit: cover;
+}
 
 @media only screen and (min-device-width: 769px) {
     .back-link_wrapper:hover {

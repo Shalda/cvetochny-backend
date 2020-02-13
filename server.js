@@ -1,14 +1,7 @@
 const app = require ("./app.js");
 const debug = require("debug")("node-angular");
 const http = require("http");
-const fs = require('fs');
-const options = {
-    // key: fs.readFileSync('key.pem'),
-    // cert: fs.readFileSync('cert.pem')
-    key: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/fullchain.pem'),
-    // ca: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/fullchain.pem')
-};
+
 const normalizePort = val => {
     var port = parseInt(val, 10);
 
