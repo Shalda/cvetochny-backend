@@ -1,14 +1,14 @@
 const app = require ("./app.js");
 const debug = require("debug")("node-angular");
-const http = require("http");
-// const fs = require('fs');
-// const options = {
-//     // key: fs.readFileSync('key.pem'),
-//     // cert: fs.readFileSync('cert.pem')
-//     key: fs.readFileSync('/etc/letsencrypt/live/example.com/privkey.pem'),
-//     cert: fs.readFileSync('/etc/letsencrypt/live/example.com/cert.pem'),
-//     ca: fs.readFileSync('/etc/letsencrypt/live/example.com/chain.pem')
-// };
+const https = require("https");
+const fs = require('fs');
+const options = {
+    // key: fs.readFileSync('key.pem'),
+    // cert: fs.readFileSync('cert.pem')
+    key: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/cert.pem'),
+    ca: fs.readFileSync('/etc/letsencrypt/live/cvetochniy.com/chain.pem')
+};
 const normalizePort = val => {
     var port = parseInt(val, 10);
 
@@ -53,7 +53,7 @@ const onListening = () => {
 const port = normalizePort(process.env.PORT || "3000");
 app.set("port", port);
 
-const server = http.createServer(app);
+const server = https.createServer(app);
 server.on('error', onError);
 server.on('listening', onListening);
 server.listen(port, () => {
