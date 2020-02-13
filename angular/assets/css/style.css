@@ -3460,10 +3460,27 @@ input[name="tel"] {
         /*max-width: 320px;*/
         margin: 0 auto
     }
+    .sidebar-left {
+        padding-left: 10px;
+    }
+
+    .filter-catalog {
+        margin-left: 10px;
+    }
+    .catalog-item {
+        padding: 10px;
+
+    }
+    .one_product__wrapper{
+        padding: 0 10px;
+    }
 
 }
 
 @media only screen and (max-device-height: 450px) {
+
+
+
     .visualLinkMobile, .weddingLinkMobile {
         display: block
     }
