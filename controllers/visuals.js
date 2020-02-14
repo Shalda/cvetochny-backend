@@ -1,5 +1,5 @@
 const Visual = require('../models/visual');
-
+const protocol = 'https://';
 exports.getVisuals = (req, res, next) => {
     const visualQuery = Visual.find();
     let fetchedVisuals;
@@ -22,7 +22,7 @@ exports.getVisuals = (req, res, next) => {
 };
 
 exports.createVisual = (req, res, next) => {
-    const url = req.protocol + "://" + req.get("host");
+    const url = protocol + req.get("host");
     let filePath = [];
     for (let i = 0; i < req.files.length; i++) {
         filePath.push(url + "/images/" + req.files[i].filename)
@@ -53,7 +53,7 @@ exports.createVisual = (req, res, next) => {
 exports.updateVisual = (req, res, next) => {
     let filePath = req.body.img;
     if (req.files) {
-        const url = req.protocol + "://" + req.get("host");
+        const url = protocol + "://" + req.get("host");
         filePath = [];
         for (let i = 0; i < req.files.length; i++) {
             filePath.push(url + "/images/" + req.files[i].filename)

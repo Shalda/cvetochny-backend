@@ -1,4 +1,5 @@
 const Product = require('../models/product');
+const protocol = 'https://';
 exports.getProducts = (req, res, next) => {
     const productQuery = Product.find();
     let fetchedProducts;
@@ -21,8 +22,7 @@ exports.getProducts = (req, res, next) => {
 };
 
 exports.createProduct = (req, res, next) => {
-    // const url = req.protocol + "://" + req.get("host");
-    const url = "https://" + req.get("host");
+    const url = protocol + req.get("host");
     const product = new Product({
         name: req.body.name,
         parentCategory: req.body.parentCategory,
@@ -51,7 +51,7 @@ exports.createProduct = (req, res, next) => {
 exports.updateProduct = (req, res, next) => {
     let imagePath = req.body.img;
     if (req.file) {
-        const url = req.protocol + "://" + req.get("host");
+        const url = protocol + req.get("host");
         imagePath = url + "/images/" + req.file.filename;
     }
     const product = new Product({
