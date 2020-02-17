@@ -55,11 +55,12 @@ async function sendMail(user, callback, schema) {
     } else {
         cartStr = 'Не выбран товар'
     }
-    const receiver = 'lazutikovnikita@gmail.com';
+    // const receiver = 'lazutikovnikita@gmail.com';
+    const receiver = 'cvetochny.kh@gmail.com';
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port:587, // 587,
+        port: 587, // 587,
         secure: false, // true for 465, false for other ports
         auth: {
             user: "cvetochny.mailing@gmail.com",
@@ -92,37 +93,45 @@ async function sendMail(user, callback, schema) {
             };
             break;
         case 'order':
-            mailOptions = {
-                from: `${user.name}`, // sender address
-                to: receiver, // list of receivers
-                subject: "Пришел заказ!", // Subject line
-                html: `<h1>Заказ от ${user.name}</h1><br>
+            let letter = `<h1>Заказ от ${user.name}</h1><br>
         <p>Количество товара: <span>${user.order.itemCount} шт.</span></p>
         <p>Сумма заказа: <span>${user.order.cartPrice} грн.</span></p>
         <br>
-         <hr>
+        <hr>
         <h3>Информация о покупателе:</h3>
         <p>Имя: <span>${user.name}</span></p>
         <p>Телефон: <span>${user.phone}</span></p>
         <p>Способ доставки: <span>${user.order.deliveryWay}</span></p>
         <p>Способ оплаты: <span>${user.order.paymentWay}</span></p>
-        <br>
-        <p>адресс: <span>${user.order.addressDelivery}</span></p>
+        <br>`;
+            if (user.order.addressDelivery) {
+                letter += `<p>адресс: <span>${user.order.addressDelivery}</span></p>
         <p>дата доставки: <span>${user.order.dateDelivery}</span></p>
         <p>время: <span>${user.order.timeDelivery}</span></p>
         <p>получатель: <span>${user.order.receiveSolo}</span></p>
-         <br>
-        <p>Имя получателя: <span>${user.order.friendName}</span></p>
+         <br>`;
+            }
+            if (user.order.friendName) {
+                letter += `<p>Имя получателя: <span>${user.order.friendName}</span></p>
         <p>Телефон получателя: <span>${user.order.friendPhone}</span></p>
-        <br>
-        <hr>
+        <br>`;
+            }
+            if (user.order.friendPhone) {
+                letter += `<p>Телефон получателя: <span>${user.order.friendPhone}</span></p>
+        <br>`;
+            }
+            letter += `<hr>
         <h3>Информация о заказе:</h3>
         <br>
          ${cartStr}
          <br>
          <h2>Итого: ${user.order.cartPrice} грн.</H2>
-        <h3>Более детально про заказ можно узнать на сайте, админ панель, раздел заказы!!!</h3>
-`
+        <h3>Более детально про заказ можно узнать на сайте, админ панель, раздел заказы!!!</h3>`;
+            mailOptions = {
+                from: `${user.name}`, // sender address
+                to: receiver, // list of receivers
+                subject: "Пришел заказ!", // Subject line
+                html: `${letter}`
             };
             break;
         case 'visual':

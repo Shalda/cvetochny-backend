@@ -549,7 +549,7 @@ input[type="submit"],
     padding: 5px 20px;
     margin-bottom: 10px;
     outline: 0;
-    background: #2e2e2b;
+    background: #4d4d4d;
     color: #fff;
     -webkit-border-radius: 4px;
     border-radius: 4px
@@ -676,7 +676,7 @@ input[type="submit"],
 }
 
 .product-card__btn button:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -877,7 +877,7 @@ header {
 
 
 .main_page_section {
-    background: url(../images/main/main.jpg) no-repeat center center fixed;
+    background: url(../images/main/grey.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     background-size: cover;
     height: calc(100vh - 170px);
@@ -1756,10 +1756,11 @@ agm-map {
     border: 1px solid orangered;
 }
 
-.form-group, .image-preview img {
-    -webkit-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.75);
-    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.75);
+.form-group, .image-preview img, .admin__product_table, .admin_order_wrapper {
+    -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.75);
+    background-color: #FBFBFB;
 }
 
 button[mat-raised-button], .auth__button_edit {
@@ -1920,7 +1921,7 @@ input[name="tel"] {
 }
 
 .navbar_cart:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 1000;
     left: 50%;
@@ -2354,8 +2355,7 @@ input[name="tel"] {
     flex-wrap: wrap;
 
     border: 1px solid white;
-    box-shadow: 0 0 10px rgba(18, 17, 12, .5);
-    margin: 6px 0;
+     margin: 6px 0;
 
 }
 
@@ -2418,7 +2418,7 @@ input[name="tel"] {
 .admin_order_common_info_status_done {
     text-transform: uppercase;
     font-weight: bold;
-    color: greenyellow;
+    color: #1d800d;
 }
 
 .count__decrease_m, .count__increase_m {
@@ -2479,6 +2479,11 @@ input[name="tel"] {
     object-fit: cover;
 }
 
+.admin_editor_container input, .admin_editor_container select {
+    background-color: #4d4d4d;
+    color: white;
+}
+
 @media only screen and (min-device-width: 769px) {
     .back-link_wrapper:hover {
         color: #ff4500;
@@ -2516,7 +2521,6 @@ input[name="tel"] {
         overflow: hidden;
     }
 }
-
 
 @media only screen and (max-device-width: 1740px) {
     .sidebars_wrapper {
@@ -2726,9 +2730,10 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 992px) {
-    /*#videoHero, #video {*/
-    /*    display: none*/
-    /*}*/
+
+    .main_page_section{
+        background-image: url(../images/main/main.jpg);
+}
     .admin_order_wrapper {
         flex-direction: column;
     }
@@ -2773,7 +2778,7 @@ input[name="tel"] {
     .footer_social a:before {
         position: absolute;
         display: block;
-        content: "";
+        content: '';
         height: 30px;
         width: 30px;
         background-image: url(../images/linkedin.svg);
@@ -3031,7 +3036,7 @@ input[name="tel"] {
     .product-card__btn button {
         width: 100%;
         color: #4d4d4d;
-        font-family: "Avenir Bold", Arial, Helvetica, sans-serif;
+        font-family: 'Avenir Bold', Arial, Helvetica, sans-serif;
         background-color: #fff
     }
 
@@ -3277,8 +3282,8 @@ input[name="tel"] {
         -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
         align-self: flex-start;
-        font-family: "Avenir Light", Arial, Helvetica, sans-serif;
-        font-size: 14px !important
+        font-family: 'Avenir Light', Arial, Helvetica, sans-serif;
+        font-size: 14px!important;
     }
 
     .count__decrease_m, .count__increase_m {
