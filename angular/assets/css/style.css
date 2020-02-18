@@ -195,7 +195,7 @@ input[type="submit"],
 }
 
 ::-webkit-scrollbar {
-    width: 0;
+    width: 0px;
     background: rgba(255, 255, 255, 0.0);
 }
 
@@ -643,6 +643,10 @@ input[type="submit"],
     font-size: 12px
 }
 
+.message-block textarea:focus + .messageLabel {
+    display: none
+}
+
 .navLink {
     -webkit-transition: color .1s ease-in-out .1s !important;
     -o-transition: color .1s ease-in-out .1s !important;
@@ -653,6 +657,48 @@ input[type="submit"],
     color: #ff4500 !important
 }
 
+.product-card__btn {
+    margin-top: 50px
+}
+
+.product-card__btn button {
+    display: inline-block;
+    font-family: "Avenir Demi", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 35px;
+    border: 1px solid rgba(255, 255, 255, .6);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    cursor: pointer
+}
+
+.product-card__btn button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    -webkit-transform: translateX(-4em) skewX(-45deg);
+    -ms-transform: translateX(-4em) skewX(-45deg);
+    transform: translateX(-4em) skewX(-45deg);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
+.product-card__btn button:hover::before {
+    -webkit-animation: move-light .6s;
+    animation: move-light .6s
+}
+
+.product-card__btn button:hover {
+    border-color: #fff
+}
 
 @-webkit-keyframes move-light {
     from {
@@ -700,6 +746,7 @@ input[type="submit"],
 
 .arrow-svg {
     -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0
 }
@@ -712,6 +759,7 @@ input[type="submit"],
 
 .back-link {
     -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
     -webkit-box-sizing: border-box;
@@ -758,11 +806,13 @@ header {
 
 .navbar_wrapper .navbar_elem {
     -webkit-align-self: center;
+    -ms-flex-item-align: center;
     align-self: center
 }
 
 .navbar_wrapper .navbar_logo {
     -webkit-flex-basis: 15.6%;
+    -ms-flex-preferred-size: 15.6%;
     flex-basis: 15.6%;
     font-family: 'Manrope Bold', Arial, SansSerif;
     font-size: 27px;
@@ -784,10 +834,13 @@ header {
     -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
     margin-top: 2px;
     -webkit-transition: .5s -webkit-transform ease-in-out;
+    transition: .5s -webkit-transform ease-in-out;
     -o-transition: .5s transform ease-in-out;
+    transition: .5s transform ease-in-out;
     transition: .5s transform ease-in-out, .5s -webkit-transform ease-in-out
 }
 
@@ -799,6 +852,7 @@ header {
 
 .navbar_wrapper .navbar_phone {
     -webkit-flex-basis: 14%;
+    -ms-flex-preferred-size: 14%;
     flex-basis: 14%;
     font-family: "Avenir Demi", Arial, Helvetica, sans-serif;
     text-align: end
@@ -1124,6 +1178,7 @@ section .callbackForm {
 
 .visual__left {
     -webkit-flex-basis: 70%;
+    -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1134,17 +1189,25 @@ section .callbackForm {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    position: relative;
+    position: relative
 }
 
 .visual__right {
     -webkit-flex-basis: 30%;
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     margin-left: 20px
 }
 
 .visual__right .product-card__name {
     margin-top: 0
+}
+
+.order_top_wrapper {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .order_bottom_wrapper {
@@ -1262,6 +1325,7 @@ section .callbackForm {
 
 .order-product-title {
     -webkit-flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
     flex-basis: 40%
 }
 
@@ -1343,6 +1407,7 @@ section .callbackForm {
     font-size: 16px;
     font-family: "Avenir Light", Arial, Helvetica, sans-serif;
     -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     padding-bottom: 25px
 }
@@ -1361,6 +1426,7 @@ section .callbackForm {
 
 .friend-delivery {
     -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1659,6 +1725,10 @@ agm-map {
     padding: 5px 0;
 }
 
+.auth__elem {
+    border: none;
+    margin: 0;
+}
 
 .auth__elem input {
     margin: 10px 0;
@@ -1680,6 +1750,10 @@ agm-map {
     color: #ffffff;
     background-color: #ffffff;
     margin: 15px 15px 15px 0;
+}
+
+.ng-invalid.formSub_edit {
+    border: 1px solid orangered;
 }
 
 .form-group, .image-preview img, .admin__product_table, .admin_order_wrapper {
@@ -2069,6 +2143,7 @@ input[name="tel"] {
     display: -ms-flexbox;
     display: flex;
     -webkit-align-self: center;
+    -ms-flex-item-align: center;
     align-self: center;
     text-align: center
 }
@@ -2164,27 +2239,32 @@ input[name="tel"] {
 
 .cart-img-title {
     -webkit-flex-basis: 15%;
+    -ms-flex-preferred-size: 15%;
     flex-basis: 15%
 }
 
 .cart-title-title {
     -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
     flex-basis: 25%
 }
 
 .cart-price-title {
     -webkit-flex-basis: 10%;
+    -ms-flex-preferred-size: 10%;
     flex-basis: 10%
 }
 
 .cart-count-title {
     -webkit-flex-basis: 15%;
+    -ms-flex-preferred-size: 15%;
     flex-basis: 15%;
     white-space: nowrap
 }
 
 .cart-price-title {
     -webkit-flex-basis: 15%;
+    -ms-flex-preferred-size: 15%;
     flex-basis: 15%
 }
 
@@ -2220,6 +2300,7 @@ input[name="tel"] {
 
 .product-desc-mobile {
     -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     font-family: "Avenir Light", Arial, Helvetica, sans-serif;
     font-size: 14px
@@ -2503,6 +2584,7 @@ input[name="tel"] {
 @media only screen and (max-device-width: 1400px) {
     .navbar_wrapper .navbar_menu {
         -webkit-flex-basis: 57%;
+        -ms-flex-preferred-size: 57%;
         flex-basis: 57%
     }
 
@@ -2513,6 +2595,7 @@ input[name="tel"] {
 
     .google-maps_wrapper {
         -webkit-align-self: center;
+        -ms-flex-item-align: center;
         align-self: center;
     }
 
@@ -2592,7 +2675,13 @@ input[name="tel"] {
         padding-bottom: 40px
     }
 
-      .product-card__name {
+    .product-card__btn {
+        position: absolute;
+        right: 100px;
+        bottom: 45px
+    }
+
+    .product-card__name {
         margin: 0
     }
 }
@@ -2821,6 +2910,7 @@ input[name="tel"] {
 
     #nav-menu .nav_menu_left {
         -webkit-flex-basis: 100% !important;
+        -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
         height: 100vh !important
     }
@@ -2935,6 +3025,11 @@ input[name="tel"] {
         padding-bottom: 20px
     }
 
+    .product-card__btn {
+        position: unset;
+        padding-bottom: 50px
+    }
+
     .product-card__btn button {
         width: 100%;
         color: #4d4d4d;
@@ -2965,6 +3060,28 @@ input[name="tel"] {
 
     .slider-for img {
         height: 63.4vw
+    }
+
+    .slick-arrow {
+        width: 49%;
+        height: 40px;
+        border: 1px solid #fff;
+        bottom: -50px;
+        top: inherit
+    }
+
+    .slick-prev:after {
+        margin-left: -27px;
+        margin-top: -10px;
+        border: 10px solid transparent;
+        border-right: 20px solid #fff
+    }
+
+    .slick-next:after {
+        margin-right: -27px;
+        margin-top: -10px;
+        border: 10px solid transparent;
+        border-left: 20px solid #fff
     }
 
     .product-card__name {
@@ -3072,6 +3189,7 @@ input[name="tel"] {
 
     .cart-elem {
         -webkit-flex-basis: 100% !important;
+        -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
         width: 95vw
     }
@@ -3129,6 +3247,7 @@ input[name="tel"] {
 
     .cart-elem span:first-child {
         -webkit-flex-basis: 33.33%;
+        -ms-flex-preferred-size: 33.33%;
         flex-basis: 33.33%
     }
 
@@ -3158,6 +3277,7 @@ input[name="tel"] {
 
     .product-desc-mobile {
         -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
         align-self: flex-start;
         font-family: 'Avenir Light', Arial, Helvetica, sans-serif;
         font-size: 14px!important;
@@ -3284,6 +3404,13 @@ input[name="tel"] {
 
     .footer_adress span {
         white-space: nowrap
+    }
+}
+
+@media only screen and (max-device-width: 568px) {
+    .product-card__btn {
+        margin-top: 25px;
+        padding-bottom: 0
     }
 }
 
