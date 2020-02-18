@@ -3443,9 +3443,7 @@ input[name="tel"] {
         width: 95vw;
         padding-bottom: 6px;
     }
-    /*.receiver-box input:first-of-type {*/
-    /*    margin-left: 0;*/
-    /*}*/
+
     .order-price-num span {
         white-space: nowrap;
     }
