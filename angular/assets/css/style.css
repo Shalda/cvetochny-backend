@@ -2767,12 +2767,15 @@ input[name="tel"] {
         font-size: 16px;
     }
 
-    .footer_social a {
+    .footer_social a, .footer_social a:hover {
         position: relative;
         color: transparent !important;
         height: 30px;
         width: 30px;
         margin-right: 20px
+    }
+    .footer_social a:hover{
+        color: transparent !important;
     }
 
     .footer_social a:before {
