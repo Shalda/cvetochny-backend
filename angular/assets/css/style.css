@@ -2002,10 +2002,6 @@ input[name="tel"] {
     display: block;
 }
 
-.submenu_cart span, p {
-    padding: 3px 3px;
-}
-
 .submenu_cart li {
     margin-bottom: 10px;
 }
