@@ -359,7 +359,8 @@ input[type="submit"],
 }
 
 #nav-menu .nav_menu_wrap .menu_right_text a {
-    font-family: "Avenir Demi", Arial, Helvetica, sans-serif
+    font-family: "Avenir Demi", Arial, Helvetica, sans-serif;
+
 }
 
 #nav-menu .nav_menu_wrap .menu_right_text span, h3 {
@@ -2479,7 +2480,17 @@ input[name="tel"] {
     background-color: #4d4d4d;
     color: white;
 }
+@media only screen and (min-device-width: 2500px) {
+    .product-card__img{
+        max-height: 900px;
+    }
+}
+@media only screen and (min-device-width: 1200px) {
+    .product-card__right {
+        max-width: 40vw;
+    }
 
+}
 @media only screen and (min-device-width: 769px) {
     .back-link_wrapper:hover {
         color: #ff4500;
@@ -3021,7 +3032,8 @@ input[name="tel"] {
     }
 
     .product-card__description {
-        padding-bottom: 20px
+        padding-bottom: 20px;
+        line-height: 20px;
     }
 
     .product-card__btn {
