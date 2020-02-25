@@ -2352,7 +2352,7 @@ input[name="tel"] {
     flex-wrap: wrap;
 
     border: 1px solid white;
-     margin: 6px 0;
+    margin: 6px 0;
 
 }
 
@@ -2464,33 +2464,42 @@ input[name="tel"] {
 .order_time {
     padding-top: 25px;
 }
-.admin-img{
+
+.admin-img {
     margin: 0 auto;
     display: block;
     width: 42px;
     height: 51px;
 }
-.admin-img img{
+
+.admin-img img {
     max-width: 42px;
     height: 100%;
     object-fit: cover;
+}
+
+#nav-menu .nav_menu_wrap .menu_right_text a.cooperation_link {
+    font-family:  "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .admin_editor_container input, .admin_editor_container select {
     background-color: #4d4d4d;
     color: white;
 }
+
 @media only screen and (min-device-width: 2500px) {
-    .product-card__img{
+    .product-card__img {
         max-height: 900px;
     }
 }
+
 @media only screen and (min-device-width: 1200px) {
     .product-card__right {
         max-width: 40vw;
     }
 
 }
+
 @media only screen and (min-device-width: 769px) {
     .back-link_wrapper:hover {
         color: #ff4500;
@@ -2738,9 +2747,10 @@ input[name="tel"] {
 
 @media only screen and (max-device-width: 992px) {
 
-    .main_page_section{
+    .main_page_section {
         background-image: url(../images/main/main.jpg);
-}
+    }
+
     .admin_order_wrapper {
         flex-direction: column;
     }
@@ -2781,7 +2791,8 @@ input[name="tel"] {
         width: 30px;
         margin-right: 20px
     }
-    .footer_social a:hover{
+
+    .footer_social a:hover {
         color: transparent !important;
     }
 
@@ -3291,7 +3302,7 @@ input[name="tel"] {
         -ms-flex-item-align: start;
         align-self: flex-start;
         font-family: 'Avenir Light', Arial, Helvetica, sans-serif;
-        font-size: 14px!important;
+        font-size: 14px !important;
     }
 
     .count__decrease_m, .count__increase_m {
@@ -3450,7 +3461,7 @@ input[name="tel"] {
 }
 
 @media only screen and (max-width: 480px) {
-    .receiver-box div{
+    .receiver-box div {
         width: 95vw;
         padding-bottom: 6px;
     }
@@ -3493,6 +3504,7 @@ input[name="tel"] {
         /*max-width: 320px;*/
         margin: 0 auto
     }
+
     .sidebar-left {
         padding-left: 10px;
     }
@@ -3500,18 +3512,19 @@ input[name="tel"] {
     .filter-catalog {
         margin-left: 10px;
     }
+
     .catalog-item {
         padding: 10px;
 
     }
-    .one_product__wrapper{
+
+    .one_product__wrapper {
         padding: 0 10px;
     }
 
 }
 
 @media only screen and (max-device-height: 450px) {
-
 
 
     .visualLinkMobile, .weddingLinkMobile {
