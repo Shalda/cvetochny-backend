@@ -30,6 +30,7 @@ exports.createProduct = (req, res, next) => {
         subcategory: req.body.subcategory,
         diameter: req.body.diameter,
         description: req.body.description,
+        note: req.body.note,
         price: req.body.price,
         img: url + "/images/" + req.file.filename,
         create_ts: req.body.create_ts
@@ -38,7 +39,7 @@ exports.createProduct = (req, res, next) => {
         .then(createdProduct => {
             res.status(201).json({
                 message: "Продукт добавлен удачно",
-                product:createdProduct
+                product: createdProduct
             });
         })
         .catch(error => {
@@ -63,20 +64,17 @@ exports.updateProduct = (req, res, next) => {
         diameter: req.body.diameter,
         img: imagePath,
         description: req.body.description,
+        note: req.body.note,
         price: req.body.price,
         create_ts: req.body.create_ts
     });
     Product.updateOne({_id: req.body._id}, product)
         .then(result => {
             console.log('result is' + product);
-            res.status(200).json({ message: "Обновленно удачно!",
-                product: product});
-            // if (result.n > 0) {
-            //     res.status(200).json({ message: "Обновленно удачно!",
-            //     product: product});
-            // } else {
-            //     res.status(401).json({ message: "не авторизированы!" });
-            // }
+            res.status(200).json({
+                message: "Обновленно удачно!",
+                product: product
+            });
         })
         .catch(error => {
             res.status(500).json({
