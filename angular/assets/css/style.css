@@ -3248,7 +3248,8 @@ input[name="tel"] {
 @media only screen and (max-device-width: 650px) {
     .season_banner {
         height: calc(100vh - 170px);
-        background: url(../images/banners/8marhmob.jpg) no-repeat center center fixed;
+        background: url(../images/banners/8marhmob.jpg) no-repeat bottom;
+        background-size: cover;
     }
 
     .admin__wrapper {
@@ -3619,7 +3620,7 @@ input[name="tel"] {
     }
 
     .cart-button.banner_btn {
-        margin-top: 50px;
+        margin-top: 20px;
         font-size: 1.2rem;
     }
 }
@@ -3635,7 +3636,9 @@ input[name="tel"] {
 
 @media only screen and (max-device-width: 374px) {
 
-
+    .season_banner .season_banner_text {
+        top: 2vh;
+           }
     .cart-button.banner_btn {
         font-size: 1.2rem;
         margin-top: 15px;
@@ -3688,7 +3691,7 @@ input[name="tel"] {
 
 @media only screen and (max-height: 768px) {
     .season_banner_text {
-        top: 15vh
+        top: 10vh
     }
 
 }
