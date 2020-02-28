@@ -1233,7 +1233,7 @@ section .callbackForm {
 }
 
 .order-product-form-box, .order-product-info-box {
-    margin-top: 45px;
+    margin-top: 20px;
     padding: 15px 0;
     /*border: 1px solid #fff;*/
     /*light theme*/
@@ -1348,7 +1348,8 @@ section .callbackForm {
 }
 
 .order-product-form-box {
-    border-bottom: transparent
+    border-bottom: transparent;
+    padding-top: 0;
 }
 
 .order-costumer-form-wrapper {
@@ -1511,7 +1512,9 @@ section .callbackForm {
     font-family: "Avenir Bold", Arial, Helvetica, sans-serif;
     color: #4d4d4d;
 }
-
+.contact-info_box a.contact-info_box_instagram {
+    color: #ff4500;
+}
 .textMobileMenuSection {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1656,9 +1659,8 @@ a {
     cursor: pointer;
 }
 
-section {
+section, .season_banner {
     min-height: calc(100vh - 170px);
-
 }
 
 .sidebar-left-wrapper a h2 {
@@ -2237,7 +2239,9 @@ input[name="tel"] {
 .cart-img-title {
     -webkit-flex-basis: 15%;
     -ms-flex-preferred-size: 15%;
-    flex-basis: 15%
+    flex-basis: 15%;
+    min-width: 130px;
+    margin-right: 6px;
 }
 
 .cart-title-title {
@@ -2478,8 +2482,40 @@ input[name="tel"] {
     object-fit: cover;
 }
 
+/*season banner*/
+.season_banner {
+    height: calc(100vh - 170px);
+    background: url(/images/banners/8march.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    font-family: "Avenir Demi", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    position: relative;
+}
+
+.season_banner_text {
+    position: absolute;
+    left: 10vw;
+    top: 25vh;
+}
+
+.banner_price {
+    color: #fad701;
+}
+.cart-button.banner_btn{
+    /*display: inline-block;*/
+    /*cursor: pointer;*/
+    /*margin-top: 40px;*/
+    /*padding: 20px;*/
+    font-size: 1.2rem;
+    margin: 0;
+}
+
 #nav-menu .nav_menu_wrap .menu_right_text a.cooperation_link {
-    font-family:  "Montserrat", Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .admin_editor_container input, .admin_editor_container select {
@@ -2527,7 +2563,7 @@ input[name="tel"] {
 }
 
 @media only screen and (min-device-width: 768px) {
-    section {
+    section, .season_banner {
         overflow: hidden;
     }
 
@@ -2659,6 +2695,10 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 1240px) {
+    .cart_product_name {
+        padding-left: 6px;
+    }
+
     .table-cart-titles {
         font-size: 14px;
     }
@@ -2844,6 +2884,16 @@ input[name="tel"] {
 
 
 @media only screen and (max-device-width: 768px) {
+    .season_banner{
+        font-size: 4rem; ;
+    }
+    .cart-button.banner_btn{
+        font-size: 1rem;
+    }
+    .table-cart-titles span {
+        text-align: left;
+    }
+
     .one_product__wrapper {
         padding: 0 16px;
     }
@@ -3159,6 +3209,13 @@ input[name="tel"] {
     }
 }
 
+@media only screen and (max-device-height: 768px) {
+    .season_banner_text{
+        top: 15vh
+    }
+
+}
+
 @media only screen and (max-device-width: 650px) {
     .admin__wrapper {
         display: block !important;
@@ -3311,6 +3368,13 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 578px) {
+    .season_banner{
+        font-size: 3rem; ;
+    }
+    .cart-button.banner_btn{
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
     .order-elem {
         font-size: 14px
     }
@@ -3444,7 +3508,10 @@ input[name="tel"] {
     header, .navbar_wrapper {
         height: 60px;
     }
+    .season_banner {
+        min-height: calc(100vh - 145px);
 
+    }
     section {
         min-height: calc(100vh - 145px);
         margin-top: 60px;
@@ -3461,6 +3528,16 @@ input[name="tel"] {
 }
 
 @media only screen and (max-width: 480px) {
+    .season_banner_text{
+        top: 25vh
+    }
+    .season_banner{
+        font-size: 3rem; ;
+    }
+    .cart-button.banner_btn{
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
     .receiver-box div {
         width: 95vw;
         padding-bottom: 6px;
@@ -3526,7 +3603,6 @@ input[name="tel"] {
 
 @media only screen and (max-device-height: 450px) {
 
-
     .visualLinkMobile, .weddingLinkMobile {
         display: block
     }
@@ -3552,11 +3628,38 @@ input[name="tel"] {
         text-overflow: ellipsis;
     }
 }
+@media only screen and (max-device-width: 440px) {
+    .season_banner {
+        font-size: 2.5rem;
+    }
+    .cart-button.banner_btn{
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-device-height: 400px) {
+    .season_banner_text{
+        top: 10vh;
+        font-size: 2rem;
+    }
 
+        .cart-button.banner_btn{
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+}
+@media only screen and (max-device-width: 380px) {
+    .season_banner_text {
+        top: 17vh;
+        left: 3vw;
+    }
+}
 @media only screen and (max-device-height: 400px) {
     #nav-menu .nav_menu_wrap .nav_menu_left {
         justify-content: flex-start;
     }
+
 }
 
 @media only screen and (max-device-width: 374px) {
