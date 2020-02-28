@@ -488,8 +488,8 @@ input[type="submit"],
 .consultation_popWindow {
     z-index: 1004;
     display: none;
-    background-color: #4d4d4d;
-    color: #fff;
+    background-color: #ffffff;
+    color: #4d4d4d;
     width: 90%;
     max-width: 500px;
     padding: 40px 30px;
@@ -515,10 +515,11 @@ input[type="submit"],
 }
 
 .consultation_subscribe_window .consultation_subcsribe-text {
+    font-family: "Avenir Demi", Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: #4d4d4d;
     margin: 0 0 40px;
     position: relative;
     padding: 0 50px;
@@ -542,7 +543,7 @@ input[type="submit"],
 }
 
 .consultation_subscribe-form input, textarea {
-    border: 1px solid #3d3d3d;
+    border: 1px solid #4d4d4d;
     width: 100%;
     font-family: Lato, sans-serif;
     font-size: 16px;
@@ -550,11 +551,9 @@ input[type="submit"],
     padding: 5px 20px;
     margin-bottom: 10px;
     outline: 0;
-    background: #4d4d4d;
-    color: #fff;
-    -webkit-border-radius: 4px;
-    border-radius: 4px
-}
+    background: #ffffff;
+    color: #4d4d4d;
+    }
 
 .consultation_btn {
     color: #161613;
@@ -574,12 +573,12 @@ input[type="submit"],
     transition: .4s
 }
 
-.consultation_btn:focus, .consultation_btn:hover {
-    background-color: #ffba00;
-    color: #fff;
-    text-decoration: none
+.consultation_btn:focus {
+    border-color: #1d800d;
+    background-color: #1d800d;
+       text-decoration: none
 }
-
+/*
 .consultation_subscribe-form .consultation_btn {
     font-size: 24px;
     line-height: 54px;
@@ -591,10 +590,24 @@ input[type="submit"],
     outline: 0;
     -webkit-border-radius: 4px;
     border-radius: 4px
-}
+}*/
 
+.consultation_subscribe-form .consultation_btn {
+    /*font-size: 20px;*/
+    /*line-height: 20px;*/
+    /*border: 1px solid #4d4d4d;*/
+    width: 100%;
+    /*padding: 10px;*/
+    /*font-weight: 700;*/
+    /*text-align: center;*/
+    /*outline: 0;*/
+    /*-webkit-border-radius: 4px;*/
+    /*border-radius: 4px;*/
+    /*color: #4d4d4d;*/
+    /*cursor: pointer;*/
+}
 .consultation_subscribe-form .consultation_btn:hover {
-    background-color: #e6a700
+    /*background-color: #e6a700*/
 }
 
 .consultation_subscribe-form .consultation_btn i {
@@ -1512,9 +1525,11 @@ section .callbackForm {
     font-family: "Avenir Bold", Arial, Helvetica, sans-serif;
     color: #4d4d4d;
 }
+
 .contact-info_box a.contact-info_box_instagram {
     color: #ff4500;
 }
+
 .textMobileMenuSection {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1841,6 +1856,7 @@ input[type="file"] {
 }
 
 .form_error_message {
+    color: #e91e63;
     padding: 0 0 10px;
 }
 
@@ -2481,12 +2497,15 @@ input[name="tel"] {
     height: 100%;
     object-fit: cover;
 }
-.note_title{
+
+.note_title {
     font-family: 'Avenir Bold', Arial, Helvetica, sans-serif;
 }
-.note_wrapper{
+
+.note_wrapper {
     font-size: 13px;
 }
+
 /*season banner*/
 .season_banner {
     height: calc(100vh - 170px);
@@ -2510,7 +2529,8 @@ input[name="tel"] {
 .banner_price {
     color: #fad701;
 }
-.cart-button.banner_btn{
+
+.cart-button.banner_btn {
     /*display: inline-block;*/
     /*cursor: pointer;*/
     /*margin-top: 40px;*/
@@ -2522,7 +2542,8 @@ input[name="tel"] {
     color: #fff;
     transition: 0.25s ease-in-out;
 }
-.cart-button.banner_btn:hover{
+
+.cart-button.banner_btn:hover {
     color: #1d800d;
     border-color: #ffffff;
     background-color: #ffffff;
@@ -2896,14 +2917,15 @@ input[name="tel"] {
     }
 }
 
-
 @media only screen and (max-device-width: 768px) {
-    .season_banner{
-        font-size: 4rem; ;
+    .season_banner {
+        font-size: 4rem;;
     }
-    .cart-button.banner_btn{
+
+    .cart-button.banner_btn {
         font-size: 1rem;
     }
+
     .table-cart-titles span {
         text-align: left;
     }
@@ -3223,14 +3245,12 @@ input[name="tel"] {
     }
 }
 
-@media only screen and (max-device-height: 768px) {
-    .season_banner_text{
-        top: 15vh
+@media only screen and (max-device-width: 650px) {
+    .season_banner {
+        height: calc(100vh - 170px);
+        background: url(../images/banners/8marhmob.jpg) no-repeat center center fixed;
     }
 
-}
-
-@media only screen and (max-device-width: 650px) {
     .admin__wrapper {
         display: block !important;
     }
@@ -3382,13 +3402,15 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 578px) {
-    .season_banner{
-        font-size: 3rem; ;
+    .season_banner {
+        font-size: 3rem;;
     }
-    .cart-button.banner_btn{
+
+    .cart-button.banner_btn {
         margin-top: 10px;
         font-size: 1.5rem;
     }
+
     .order-elem {
         font-size: 14px
     }
@@ -3514,44 +3536,20 @@ input[name="tel"] {
     }
 }
 
-@media only screen and (max-device-height: 500px) {
-    #navMenuLeft {
-        height: calc(100vh - 130px);
-    }
-
-    header, .navbar_wrapper {
-        height: 60px;
-    }
-    .season_banner {
-        min-height: calc(100vh - 145px);
-
-    }
-    section {
-        min-height: calc(100vh - 145px);
-        margin-top: 60px;
-    }
-
-    #nav-menu {
-        top: 60px;
-    }
-
-    .checkout_section {
-        margin-top: 50px;
-    }
-
-}
-
 @media only screen and (max-width: 480px) {
-    .season_banner_text{
+    .season_banner_text {
         top: 25vh
     }
-    .season_banner{
-        font-size: 3rem; ;
+
+    .season_banner {
+        font-size: 3rem;;
     }
-    .cart-button.banner_btn{
+
+    .cart-button.banner_btn {
         margin-top: 10px;
         font-size: 1.5rem;
     }
+
     .receiver-box div {
         width: 95vw;
         padding-bottom: 6px;
@@ -3615,68 +3613,34 @@ input[name="tel"] {
 
 }
 
-@media only screen and (max-device-height: 450px) {
-
-    .visualLinkMobile, .weddingLinkMobile {
-        display: block
-    }
-
-    #nav-menu .nav_menu_wrap .nav_menu_left a {
-        font-size: 20px;
-        padding: 5px 0;
-    }
-
-    #nav-menu .nav_menu_wrap .menu_right_text a {
-        padding: 5px;
-    }
-
-    .catalog-item__prices {
-
-        white-space: nowrap;
-        margin-right: 4px;
-    }
-
-    .catalog-item__btn {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
 @media only screen and (max-device-width: 440px) {
     .season_banner {
         font-size: 2.5rem;
     }
-    .cart-button.banner_btn{
-        margin-top: 20px;
-        font-size: 1.8rem;
+
+    .cart-button.banner_btn {
+        margin-top: 50px;
+        font-size: 1.2rem;
     }
 }
-@media only screen and (max-device-height: 400px) {
-    .season_banner_text{
-        top: 10vh;
-        font-size: 2rem;
-    }
 
-        .cart-button.banner_btn{
-            margin-top: 20px;
-            font-size: 1rem;
-        }
-
-}
 @media only screen and (max-device-width: 380px) {
-    .season_banner_text {
-        top: 17vh;
+    .season_banner .season_banner_text {
+        top: 8vh;
         left: 3vw;
     }
-}
-@media only screen and (max-device-height: 400px) {
-    #nav-menu .nav_menu_wrap .nav_menu_left {
-        justify-content: flex-start;
-    }
+
 
 }
 
 @media only screen and (max-device-width: 374px) {
+
+
+    .cart-button.banner_btn {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+
     .card-buttons_wrapper button {
         margin-right: 0;
         padding: 6px;
@@ -3721,4 +3685,83 @@ input[name="tel"] {
         flex-direction: column-reverse;
     }
 }
+
+@media only screen and (max-height: 768px) {
+    .season_banner_text {
+        top: 15vh
+    }
+
+}
+
+@media only screen and (max-height: 500px) {
+    #navMenuLeft {
+        height: calc(100vh - 130px);
+    }
+
+    header, .navbar_wrapper {
+        height: 60px;
+    }
+
+    .season_banner {
+        min-height: calc(100vh - 145px);
+
+    }
+
+    section {
+        min-height: calc(100vh - 145px);
+        margin-top: 60px;
+    }
+
+    #nav-menu {
+        top: 60px;
+    }
+
+    .checkout_section {
+        margin-top: 50px;
+    }
+
+}
+@media only screen and (max-height: 450px) {
+
+    .visualLinkMobile, .weddingLinkMobile {
+        display: block
+    }
+
+    #nav-menu .nav_menu_wrap .nav_menu_left a {
+        font-size: 20px;
+        padding: 5px 0;
+    }
+
+    #nav-menu .nav_menu_wrap .menu_right_text a {
+        padding: 5px;
+    }
+
+    .catalog-item__prices {
+
+        white-space: nowrap;
+        margin-right: 4px;
+    }
+
+    .catalog-item__btn {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media only all and (max-height: 400px) {
+    #nav-menu .nav_menu_wrap .nav_menu_left {
+        justify-content: flex-start;
+    }
+    .season_banner .season_banner_text {
+        top: 10vh;
+        font-size: 1.5rem!important;
+    }
+
+    .season_banner .cart-button.banner_btn {
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+
+}
+
 
