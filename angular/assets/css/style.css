@@ -2481,7 +2481,12 @@ input[name="tel"] {
     height: 100%;
     object-fit: cover;
 }
-
+.note_title{
+    font-family: 'Avenir Bold', Arial, Helvetica, sans-serif;
+}
+.note_wrapper{
+    font-size: 13px;
+}
 /*season banner*/
 .season_banner {
     height: calc(100vh - 170px);
