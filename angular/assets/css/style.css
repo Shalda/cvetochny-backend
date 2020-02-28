@@ -354,7 +354,7 @@ input[type="submit"],
 
 #nav-menu .nav_menu_wrap .menu_right_text h3 {
     line-height: 1.2;
-    font-weight: 900;
+    font-family: "Avenir Demi", Arial, Helvetica, sans-serif;
     padding: 10px 0
 }
 
@@ -2517,6 +2517,15 @@ input[name="tel"] {
     /*padding: 20px;*/
     font-size: 1.2rem;
     margin: 0;
+    border-color: #1d800d;
+    background-color: #1d800d;
+    color: #fff;
+    transition: 0.25s ease-in-out;
+}
+.cart-button.banner_btn:hover{
+    color: #1d800d;
+    border-color: #ffffff;
+    background-color: #ffffff;
 }
 
 #nav-menu .nav_menu_wrap .menu_right_text a.cooperation_link {
