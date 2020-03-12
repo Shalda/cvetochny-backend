@@ -2577,12 +2577,12 @@ app-cart-modal {
     display: flex;
     /* z-index must be higher than .jw-modal-background */
     z-index: 1001;
- }
+}
 
 .to-cart-modal-body {
     padding: 40px 60px 60px;
     background: #fff;
-
+    width: 650px;
     /* margin exposes part of the modal background */
     margin: auto;
 }
@@ -3360,10 +3360,12 @@ body.to-cart-modal-open {
     .to-cart-modal-buttons-box {
         flex-direction: column;
     }
-    .to-cart-modal-buttons-box button{
-        padding: 10px!important;
-        font-size: 16px!important;
+
+    .to-cart-modal-buttons-box button {
+        padding: 10px !important;
+        font-size: 16px !important;
     }
+
     .to-cart-modal-buttons-box button:last-child {
         margin: 20px 0;
     }
