@@ -553,7 +553,7 @@ input[type="submit"],
     outline: 0;
     background: #ffffff;
     color: #4d4d4d;
-    }
+}
 
 .consultation_btn {
     color: #161613;
@@ -576,8 +576,9 @@ input[type="submit"],
 .consultation_btn:focus {
     border-color: #1d800d;
     background-color: #1d800d;
-       text-decoration: none
+    text-decoration: none
 }
+
 /*
 .consultation_subscribe-form .consultation_btn {
     font-size: 24px;
@@ -606,6 +607,7 @@ input[type="submit"],
     /*color: #4d4d4d;*/
     /*cursor: pointer;*/
 }
+
 .consultation_subscribe-form .consultation_btn:hover {
     /*background-color: #e6a700*/
 }
@@ -2558,6 +2560,72 @@ input[name="tel"] {
     color: white;
 }
 
+
+/* modal */
+app-cart-modal {
+    /* modals are hidden by default */
+    display: none;
+}
+
+.to-cart-modal {
+    /* modal container fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    /* z-index must be higher than .jw-modal-background */
+    z-index: 1001;
+ }
+
+.to-cart-modal-body {
+    padding: 40px 60px 60px;
+    background: #fff;
+
+    /* margin exposes part of the modal background */
+    margin: auto;
+}
+
+.to-cart-modal-buttons-box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.to-cart-modal-buttons-box button {
+    flex-basis: 50%;
+    white-space: nowrap;
+}
+
+.to-cart-modal-text {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.to-cart-modal-background {
+    /* modal background fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* semi-transparent black  */
+    background-color: #000;
+    opacity: 0.75;
+
+    /* z-index must be below .jw-modal and above everything else  */
+    z-index: 1000;
+}
+
+
+body.to-cart-modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+}
+
 @media only screen and (min-device-width: 2500px) {
     .product-card__img {
         max-height: 900px;
@@ -3288,6 +3356,22 @@ input[name="tel"] {
 }
 
 @media only screen and (max-device-width: 590px) {
+
+    .to-cart-modal-buttons-box {
+        flex-direction: column;
+    }
+    .to-cart-modal-buttons-box button{
+        padding: 10px!important;
+        font-size: 16px!important;
+    }
+    .to-cart-modal-buttons-box button:last-child {
+        margin: 20px 0;
+    }
+
+    .to-cart-modal-body {
+        padding: 20px 20px 20px;
+    }
+
     .cart-count-title {
         margin-left: 0;
     }
@@ -3637,7 +3721,8 @@ input[name="tel"] {
 
     .season_banner .season_banner_text {
         top: 2vh;
-           }
+    }
+
     .cart-button.banner_btn {
         font-size: 1.2rem;
         margin-top: 15px;
@@ -3723,6 +3808,7 @@ input[name="tel"] {
     }
 
 }
+
 @media only screen and (max-height: 450px) {
 
     .visualLinkMobile, .weddingLinkMobile {
@@ -3750,13 +3836,15 @@ input[name="tel"] {
         text-overflow: ellipsis;
     }
 }
+
 @media only all and (max-height: 400px) {
     #nav-menu .nav_menu_wrap .nav_menu_left {
         justify-content: flex-start;
     }
+
     .season_banner .season_banner_text {
         top: 10vh;
-        font-size: 1.5rem!important;
+        font-size: 1.5rem !important;
     }
 
     .season_banner .cart-button.banner_btn {
