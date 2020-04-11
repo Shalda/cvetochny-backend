@@ -3701,7 +3701,7 @@ body.to-cart-modal-open {
 
 @media only screen and (max-device-width: 440px) {
     .season_banner {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .cart-button.banner_btn {
@@ -3711,6 +3711,7 @@ body.to-cart-modal-open {
 }
 
 @media only screen and (max-device-width: 380px) {
+
     .season_banner .season_banner_text {
         top: 8vh;
         left: 3vw;
@@ -3724,7 +3725,9 @@ body.to-cart-modal-open {
     .season_banner .season_banner_text {
         top: 2vh;
     }
-
+    .season_banner {
+        font-size: 1.8rem;
+    }
     .cart-button.banner_btn {
         font-size: 1.2rem;
         margin-top: 15px;
