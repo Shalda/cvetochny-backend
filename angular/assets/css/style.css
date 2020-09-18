@@ -893,7 +893,7 @@ header {
 
 
 .main_page_section {
-    background: url(../images/main/grey.png) no-repeat center center fixed;
+    /*background: url(../images/main/grey.png) no-repeat center center fixed;*/
     -webkit-background-size: cover;
     background-size: cover;
     height: calc(100vh - 170px);
@@ -2511,13 +2511,13 @@ input[name="tel"] {
 /*season banner*/
 .season_banner {
     height: calc(100vh - 170px);
-    background: url(../images/banners/8march.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #ffffff;
-    font-family: "Avenir Demi", Arial, Helvetica, sans-serif;
+    background: url(../images/banners/banner.png) no-repeat bottom 50px right 25% fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    color: #4d4d4d;
+    font-family: "Avenir", Arial, Helvetica, sans-serif;
     font-size: 5rem;
     position: relative;
 }
@@ -2538,15 +2538,16 @@ input[name="tel"] {
     /*margin-top: 40px;*/
     /*padding: 20px;*/
     font-size: 1.2rem;
-    margin: 0;
-    border-color: #1d800d;
-    background-color: #1d800d;
+    margin: 30px 0 0 0;
+    border-color: #4d4d4d;
+    background-color: #4d4d4d;
     color: #fff;
     transition: 0.25s ease-in-out;
+    text-transform: uppercase;
 }
 
 .cart-button.banner_btn:hover {
-    color: #1d800d;
+    color: #4d4d4d;
     border-color: #ffffff;
     background-color: #ffffff;
 }
@@ -2780,6 +2781,14 @@ body.to-cart-modal-open {
 }
 
 @media only screen and (max-device-width: 1260px) {
+    .season_banner {
+        background: url(../images/banners/banner.png) no-repeat bottom 0 right 0 fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+
     .sidebar-right {
         margin: 0;
     }
@@ -2890,10 +2899,9 @@ body.to-cart-modal-open {
 
 @media only screen and (max-device-width: 992px) {
 
-    .main_page_section {
-        background-image: url(../images/main/main.jpg);
-    }
-
+    /*.main_page_section {*/
+    /*    background-image: url(../images/main/main.jpg);*/
+    /*}*/
     .admin_order_wrapper {
         flex-direction: column;
     }
@@ -2980,6 +2988,14 @@ body.to-cart-modal-open {
 }
 
 @media only screen and (max-width: 800px) {
+    .season_banner {
+        background: url(../images/banners/banner.png) no-repeat bottom 0 right -10rem;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+    }
+
     .consultation_popWindow {
         margin-left: -45%
     }
@@ -3315,8 +3331,8 @@ body.to-cart-modal-open {
 @media only screen and (max-device-width: 650px) {
     .season_banner {
         height: calc(100vh - 170px);
-        background: url(../images/banners/8marhmob.jpg) no-repeat bottom;
-        background-size: cover;
+        /*background: url(../images/banners/8marhmob.jpg) no-repeat bottom;*/
+        /*background-size: cover;*/
     }
 
     .admin__wrapper {
@@ -3624,7 +3640,7 @@ body.to-cart-modal-open {
 
 @media only screen and (max-width: 480px) {
     .season_banner_text {
-        top: 25vh
+        top: 35vh
     }
 
     .season_banner {
@@ -3671,6 +3687,15 @@ body.to-cart-modal-open {
 }
 
 @media only screen and (max-device-width: 460px) {
+    .season_banner {
+        background: url(../images/banners/banner.png) no-repeat bottom 0px right -10rem;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+
     .product-card__img {
         height: 408.5px
     }
@@ -3700,6 +3725,7 @@ body.to-cart-modal-open {
 }
 
 @media only screen and (max-device-width: 440px) {
+
     .season_banner {
         font-size: 2rem;
     }
@@ -3713,7 +3739,7 @@ body.to-cart-modal-open {
 @media only screen and (max-device-width: 380px) {
 
     .season_banner .season_banner_text {
-        top: 8vh;
+        top: 35vh;
         left: 3vw;
     }
 
@@ -3723,11 +3749,13 @@ body.to-cart-modal-open {
 @media only screen and (max-device-width: 374px) {
 
     .season_banner .season_banner_text {
-        top: 2vh;
+        top: 25vh;
     }
+
     .season_banner {
         font-size: 1.8rem;
     }
+
     .cart-button.banner_btn {
         font-size: 1.2rem;
         margin-top: 15px;
@@ -3777,10 +3805,17 @@ body.to-cart-modal-open {
         flex-direction: column-reverse;
     }
 }
+@media only screen and (max-device-width: 374px) {
+    .season_banner {
+        background: url(../images/banners/banner.png)  no-repeat bottom 0px right -7rem;
+        background-size: cover;
+    }
+
+}
 
 @media only screen and (max-height: 768px) {
     .season_banner_text {
-        top: 10vh
+        top: 40vh
     }
 
 }
@@ -3848,13 +3883,20 @@ body.to-cart-modal-open {
     }
 
     .season_banner .season_banner_text {
-        top: 10vh;
+        top: 35vh;
         font-size: 1.5rem !important;
     }
 
     .season_banner .cart-button.banner_btn {
         margin-top: 15px;
         font-size: 1rem;
+    }
+
+}
+@media only all and (max-height: 480px) {
+    .season_banner {
+        background: url(../images/banners/banner.png)  no-repeat bottom 0px right -5rem;
+        background-size: contain;
     }
 
 }
