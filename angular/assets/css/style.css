@@ -2547,9 +2547,9 @@ input[name="tel"] {
 }
 
 .cart-button.banner_btn:hover {
-    color: #4d4d4d;
-    border-color: #ffffff;
-    background-color: #ffffff;
+    border-color: #ff4500;
+    background-color: #ff4500;
+    color: #ffffff;
 }
 
 #nav-menu .nav_menu_wrap .menu_right_text a.cooperation_link {
@@ -3805,9 +3805,10 @@ body.to-cart-modal-open {
         flex-direction: column-reverse;
     }
 }
+
 @media only screen and (max-device-width: 374px) {
     .season_banner {
-        background: url(../images/banners/banner.png)  no-repeat bottom 0px right -7rem;
+        background: url(../images/banners/banner.png) no-repeat bottom 0px right -7rem;
         background-size: cover;
     }
 
@@ -3893,9 +3894,10 @@ body.to-cart-modal-open {
     }
 
 }
+
 @media only all and (max-height: 480px) {
     .season_banner {
-        background: url(../images/banners/banner.png)  no-repeat bottom 0px right -5rem;
+        background: url(../images/banners/banner.png) no-repeat bottom 0px right -5rem;
         background-size: contain;
     }
 
