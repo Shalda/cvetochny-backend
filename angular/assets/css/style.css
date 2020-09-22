@@ -2511,7 +2511,7 @@ input[name="tel"] {
 /*season banner*/
 .season_banner {
     height: calc(100vh - 170px);
-    background: url(../images/banners/banner.png) no-repeat bottom 50px right 25% fixed;
+    background: url(../images/banners/bannerlight.png) no-repeat bottom 50px right 25% fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -2782,7 +2782,7 @@ body.to-cart-modal-open {
 
 @media only screen and (max-device-width: 1260px) {
     .season_banner {
-        background: url(../images/banners/banner.png) no-repeat bottom 0 right 0 fixed;
+        background: url(../images/banners/bannerlight.png) no-repeat bottom 0 right 0 fixed;
         -webkit-background-size: contain;
         -moz-background-size: contain;
         -o-background-size: contain;
@@ -2899,9 +2899,6 @@ body.to-cart-modal-open {
 
 @media only screen and (max-device-width: 992px) {
 
-    /*.main_page_section {*/
-    /*    background-image: url(../images/main/main.jpg);*/
-    /*}*/
     .admin_order_wrapper {
         flex-direction: column;
     }
@@ -2989,7 +2986,7 @@ body.to-cart-modal-open {
 
 @media only screen and (max-width: 800px) {
     .season_banner {
-        background: url(../images/banners/banner.png) no-repeat bottom 0 right -10rem;
+        background: url(../images/banners/bannerlight.png) no-repeat bottom 0 right -10rem;
         -webkit-background-size: contain;
         -moz-background-size: contain;
         -o-background-size: contain;
@@ -3331,8 +3328,6 @@ body.to-cart-modal-open {
 @media only screen and (max-device-width: 650px) {
     .season_banner {
         height: calc(100vh - 170px);
-        /*background: url(../images/banners/8marhmob.jpg) no-repeat bottom;*/
-        /*background-size: cover;*/
     }
 
     .admin__wrapper {
@@ -3688,7 +3683,7 @@ body.to-cart-modal-open {
 
 @media only screen and (max-device-width: 460px) {
     .season_banner {
-        background: url(../images/banners/banner.png) no-repeat bottom 0px right -10rem;
+        background: url(../images/banners/bannerlight.png) no-repeat bottom 0px right -10rem;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -3808,7 +3803,7 @@ body.to-cart-modal-open {
 
 @media only screen and (max-device-width: 374px) {
     .season_banner {
-        background: url(../images/banners/banner.png) no-repeat bottom 0px right -7rem;
+        background: url(../images/banners/bannerlight.png) no-repeat bottom 0px right -7rem;
         background-size: cover;
     }
 
@@ -3897,10 +3892,28 @@ body.to-cart-modal-open {
 
 @media only all and (max-height: 480px) {
     .season_banner {
-        background: url(../images/banners/banner.png) no-repeat bottom 0px right -5rem;
+        background: url(../images/banners/bannerlight.png) no-repeat bottom 0px right 5rem;
         background-size: contain;
     }
 
+    .season_banner .season_banner_text {
+        top: 5vh;
+        font-size: 4rem;
+    }
+
+}
+
+@media only all
+and (device-width: 320px)
+and (device-height: 480px) {
+    .season_banner .season_banner_text {
+        top: 25vh;
+        font-size: 2rem;
+    }
+
+    .season_banner {
+        background-position: 11rem;
+    }
 }
 
 
