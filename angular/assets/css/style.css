@@ -2950,18 +2950,18 @@ body.to-cart-modal-open {
         content: '';
         height: 30px;
         width: 30px;
-        background-image: url(../images/linkedin.svg);
+        background-image: url(../images/instagram.svg);
         -webkit-background-size: 100% 100%;
         background-size: 100% 100%
     }
 
-    .footer_social a:first-child:before {
-        background-image: url(../images/instagram.svg)
-    }
+    /*.footer_social a:first-child:before {*/
+    /*    background-image: url(../images/linkedin.svg)*/
+    /*}*/
 
-    .footer_social a:last-child:before {
-        background-image: url(../images/facebook.svg)
-    }
+    /*.footer_social a:last-child:before {*/
+    /*    background-image: url(../images/facebook.svg)*/
+    /*}*/
 
     .footer_consultation svg {
         display: none !important
