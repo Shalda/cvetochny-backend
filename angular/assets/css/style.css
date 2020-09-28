@@ -3620,12 +3620,14 @@ body.to-cart-modal-open {
         align-items: flex-end
     }
 
-    .footer_adress {
+    #footer .footer .footer_adress {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
-        flex-direction: row
+        flex-direction: row;
+        flex-basis: 70%;
+        justify-content: space-between;
     }
 
     .footer_adress span {
