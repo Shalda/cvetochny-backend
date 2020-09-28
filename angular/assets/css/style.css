@@ -2923,9 +2923,16 @@ body.to-cart-modal-open {
     .price-num, .totalCel {
         font-size: 18px !important
     }
-
+    #footer .footer{
+        justify-content: space-around;
+    }
     footer a {
-        padding-right: 5px !important
+        padding-right: 5px !important;
+
+    }
+    footer a:last-child {
+        padding-right: 0 !important;
+
     }
 
     .sidebar-left_list a {
@@ -2937,7 +2944,7 @@ body.to-cart-modal-open {
         color: transparent !important;
         height: 30px;
         width: 30px;
-        margin-right: 20px
+        margin: 0;
     }
 
     .footer_social a:hover {
@@ -3014,10 +3021,10 @@ body.to-cart-modal-open {
     .one_product__wrapper {
         padding: 0 16px;
     }
-
+/*
     .footer_social a {
         margin-right: 15px;
-    }
+    }*/
 
     .card-buttons_wrapper button:first-of-type {
         margin-right: 8px;
@@ -3606,7 +3613,7 @@ body.to-cart-modal-open {
     }
 
     .footer_adress {
-        width: 66vw;
+        /*width: 66vw;*/
         -webkit-box-align: end;
         -webkit-align-items: flex-end;
         -ms-flex-align: end;
@@ -3796,9 +3803,9 @@ body.to-cart-modal-open {
         margin-left: 6px;
     }
 
-    .footer {
-        flex-direction: column-reverse;
-    }
+    /*.footer {*/
+    /*    flex-direction: column-reverse;*/
+    /*}*/
 }
 
 @media only screen and (max-device-width: 374px) {
