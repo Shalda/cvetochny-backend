@@ -106,7 +106,7 @@ async function sendMail(user, callback, schema) {
         <br>`;
             if (user.order.addressDelivery) {
                 letter += `<p>адресс: <span>${user.order.addressDelivery}</span></p>
-        <p>дата доставки: <span>${new Date(Date.UTC(user.order.dateDelivery)).toLocaleDateString("uk-UA")}</span></p>
+        <p>дата доставки: <span>${(new Date(user.order.dateDelivery)).toLocaleDateString()}</span></p>
         <p>время: <span>${user.order.timeDelivery}</span></p>
         <p>получатель: <span>${user.order.receiveSolo}</span></p>
          <br>`;
