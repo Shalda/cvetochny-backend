@@ -55,8 +55,8 @@ async function sendMail(user, callback, schema) {
     } else {
         cartStr = 'Не выбран товар'
     }
-    const receiver = ['lazutikovnikita@gmail.com', 'cvetochniykharkiv@gmail.com'];
-    //const receiver = 'zeppelin.ua@gmail.com';
+    //const receiver = ['lazutikovnikita@gmail.com', 'cvetochniykharkiv@gmail.com'];
+   const receiver = 'zeppelin.ua@gmail.com';
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
