@@ -93,8 +93,6 @@ async function sendMail(user, callback, schema) {
             };
             break;
         case 'order':
-            const d = new Date(user.order.dateDelivery);
-            const orderDate = Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
             let letter = `<h1>Заказ от ${user.name}</h1><br>
         <p>Количество товара: <span>${user.order.itemCount} шт.</span></p>
         <p>Сумма заказа: <span>${user.order.cartPrice} грн.</span></p>
@@ -108,7 +106,7 @@ async function sendMail(user, callback, schema) {
         <br>`;
             if (user.order.addressDelivery) {
                 letter += `<p>адресс: <span>${user.order.addressDelivery}</span></p>
-        <p>дата доставки: <span>${new Date(orderDate).toLocaleDateString('uk-UA')}</span></p>
+        <p>дата доставки: <span>${user.order.dateDelivery}</span></p>
         <p>время: <span>${user.order.timeDelivery}</span></p>
         <p>получатель: <span>${user.order.receiveSolo}</span></p>
          <br>`;
