@@ -2627,20 +2627,20 @@ body.to-cart-modal-open {
     overflow: hidden;
 }
 
-@media only screen and (min-device-width: 2500px) {
+@media only screen and (min-width: 2500px) {
     .product-card__img {
         max-height: 900px;
     }
 }
 
-@media only screen and (min-device-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .product-card__right {
         max-width: 40vw;
     }
 
 }
 
-@media only screen and (min-device-width: 769px) {
+@media only screen and (min-width: 769px) {
     .back-link_wrapper:hover {
         color: #ff4500;
     }
@@ -2666,7 +2666,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
     section, .season_banner {
         overflow: hidden;
     }
@@ -2678,14 +2678,14 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 1740px) {
+@media only screen and (max-width: 1740px) {
     .sidebars_wrapper {
         width: 95vw;
         padding: 0
     }
 }
 
-@media only screen and (max-device-width: 1720px) {
+@media only screen and (max-width: 1720px) {
     #orderForm input, select {
         width: 21vw
     }
@@ -2697,7 +2697,7 @@ body.to-cart-modal-open {
 
 }
 
-@media only screen and (max-device-width: 1600px) {
+@media only screen and (max-width: 1600px) {
     #cart-table {
         width: 70vw
     }
@@ -2711,7 +2711,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 1460px) {
+@media only screen and (max-width: 1460px) {
     .catalog-item {
         flex: 0 1 31%;
         margin-right: 10px;
@@ -2727,7 +2727,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 1450px) {
+@media only screen and (max-width: 1450px) {
     .product-card__img {
         height: 566.1px
     }
@@ -2737,7 +2737,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 1400px) {
+@media only screen and (max-width: 1400px) {
     .navbar_wrapper .navbar_menu {
         -webkit-flex-basis: 57%;
         -ms-flex-preferred-size: 57%;
@@ -2780,7 +2780,7 @@ body.to-cart-modal-open {
     /*    }*/
 }
 
-@media only screen and (max-device-width: 1260px) {
+@media only screen and (max-width: 1260px) {
     .season_banner {
         background: url(../images/banners/bannerlight.png) no-repeat bottom 0 right 0 fixed;
         -webkit-background-size: contain;
@@ -2806,7 +2806,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 1240px) {
+@media only screen and (max-width: 1240px) {
     .cart_product_name {
         padding-left: 6px;
     }
@@ -2854,7 +2854,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .order_bottom_wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2897,7 +2897,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 992px) {
+@media only screen and (max-width: 992px) {
 
     .admin_order_wrapper {
         flex-direction: column;
@@ -2975,7 +2975,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-width: 900px) {
     .catalog-item__prices {
         margin-bottom: 0;
     }
@@ -2985,7 +2985,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 850px) {
+@media only screen and (max-width: 850px) {
     .sidebar-left-wrapper {
         position: relative;
     }
@@ -3005,7 +3005,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
     .season_banner {
         font-size: 4rem;;
     }
@@ -3332,7 +3332,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 650px) {
+@media only screen and (max-width: 650px) {
     .season_banner {
         height: calc(100vh - 170px);
     }
@@ -3367,13 +3367,13 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (min-device-width: 591px) {
+@media only screen and (min-width: 591px) {
     .product-desc-mobile {
         display: none !important
     }
 }
 
-@media only screen and (max-device-width: 590px) {
+@media only screen and (max-width: 590px) {
 
     .to-cart-modal-buttons-box {
         flex-direction: column;
@@ -3505,7 +3505,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 578px) {
+@media only screen and (max-width: 578px) {
     .season_banner {
         font-size: 3rem;;
     }
@@ -3635,7 +3635,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 568px) {
+@media only screen and (max-width: 568px) {
     .product-card__btn {
         margin-top: 25px;
         padding-bottom: 0
@@ -3690,7 +3690,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 460px) {
+@media only screen and (max-width: 460px) {
     .season_banner {
         background: url(../images/banners/bannerlight.png) no-repeat bottom 0px right -10rem;
         -webkit-background-size: cover;
@@ -3728,7 +3728,7 @@ body.to-cart-modal-open {
 
 }
 
-@media only screen and (max-device-width: 440px) {
+@media only screen and (max-width: 440px) {
 
     .season_banner {
         font-size: 2rem;
@@ -3740,7 +3740,7 @@ body.to-cart-modal-open {
     }
 }
 
-@media only screen and (max-device-width: 380px) {
+@media only screen and (max-width: 380px) {
 
     .season_banner .season_banner_text {
         top: 35vh;
@@ -3750,7 +3750,7 @@ body.to-cart-modal-open {
 
 }
 
-@media only screen and (max-device-width: 374px) {
+@media only screen and (max-width: 374px) {
 
     .season_banner .season_banner_text {
         top: 25vh;
@@ -3810,7 +3810,7 @@ body.to-cart-modal-open {
     /*}*/
 }
 
-@media only screen and (max-device-width: 374px) {
+@media only screen and (max-width: 374px) {
     .season_banner {
         background: url(../images/banners/bannerlight.png) no-repeat bottom 0px right -7rem;
         background-size: cover;
